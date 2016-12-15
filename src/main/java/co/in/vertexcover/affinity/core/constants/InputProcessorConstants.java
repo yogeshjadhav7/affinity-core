@@ -1,4 +1,4 @@
-package co.in.vertexcover.affinity.constants;
+package co.in.vertexcover.affinity.core.constants;
 
 import java.util.regex.Pattern;
 

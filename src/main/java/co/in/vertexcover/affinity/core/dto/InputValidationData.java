@@ -1,8 +1,8 @@
-package co.in.vertexcover.affinity.core.response;
+package co.in.vertexcover.affinity.core.dto;
 
-import co.in.vertexcover.affinity.core.dto.InputData;
+import co.in.vertexcover.affinity.client.ProcessData;
 
-public class InputProcessorResponse {
+public class InputValidationData extends ProcessData {
 
 	private boolean isValid;
 	private String errorMessage;

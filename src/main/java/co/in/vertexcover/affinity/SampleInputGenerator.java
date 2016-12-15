@@ -17,7 +17,7 @@ public class SampleInputGenerator {
 		File f = new File(inputFilePath);
 		FileUtils.writeStringToFile(f, "", false);
 		
-		for(int i = 1; i <= 100; i++) {
+		for(int i = 1; i <= 25; i++) {
 			String e = "entity" + i;
 			HashSet<String> set = new HashSet<>();
 			int setSize = 5 + (int)(Math.random() * 20);

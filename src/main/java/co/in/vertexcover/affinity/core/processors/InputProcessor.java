@@ -12,28 +12,29 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import co.in.vertexcover.affinity.constants.InputProcessorConstants;
+
+import co.in.vertexcover.affinity.core.constants.InputProcessorConstants;
 import co.in.vertexcover.affinity.core.dto.InputData;
+import co.in.vertexcover.affinity.core.dto.InputValidationData;
 import co.in.vertexcover.affinity.core.pojo.Entity;
 import co.in.vertexcover.affinity.core.pojo.Term;
-import co.in.vertexcover.affinity.core.response.InputProcessorResponse;
 
 public class InputProcessor {
 	
-	private InputProcessorResponse response;
+	private InputValidationData response;
 	private Map<String, Entity> entityData;
 	private Map<String, Term> termData;
 	private HashSet<String> termSet;
 	
 	public InputProcessor() {
-		this.response = new InputProcessorResponse();
+		this.response = new InputValidationData();
 		this.response.setValid(true);
 		this.entityData = new HashMap<String, Entity>();
 		this.termData = new HashMap<String, Term>();
 		this.termSet = new HashSet<>();
 	}
 
-	public InputProcessorResponse validate(final File inputFile, final double termMinimumOccurrencePercentage) {
+	public InputValidationData validate(final File inputFile, final double termMinimumOccurrencePercentage) {
 		int lineNumber = 1;
 		try(BufferedReader br = new BufferedReader(new FileReader(inputFile))) {
 		    for(String inputLine; (inputLine = br.readLine()) != null; ) {

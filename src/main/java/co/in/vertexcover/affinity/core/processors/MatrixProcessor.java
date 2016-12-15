@@ -31,7 +31,7 @@ public class MatrixProcessor {
 		System.out.println("Building mds matrix...");
 		double[][] mdsMatrix = MDSJ.classicalScaling(distanceMatrix, mdsDimensions);
 		MdsData mdsData = new MdsData(transposeOf(mdsMatrix), this.inputData.getEntityList(), this.inputData.getTermList(),
-				this.inputData.getEntityData());
+				this.inputData.getEntityData(), mdsDimensions);
 		return mdsData;
 	}
 	

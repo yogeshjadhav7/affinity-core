@@ -20,7 +20,6 @@ public class SvmProcessor {
 	private String term;
 	private int numberOfEntity;
 	private int featureVectorRowSize;
-	private int mdsDimensions;
 	private double[][] featureVectorMatrix;
 	private double[] labels;
 	private double[] predictedLabels;
@@ -85,8 +84,8 @@ public class SvmProcessor {
 		performPrediction(model);
 		processDecisionValues();
 		final double kappaScore = calculateKappaScore(labels, predictedLabels);
-		System.out.println("kS " + kappaScore);
-		return new SvmData(this.term, this.decisionValues, this.entityList, kappaScore, null);
+		final double[] coordinates = getCoordinatesOfW(model);
+		return new SvmData(this.term, this.decisionValues, this.entityList, kappaScore, coordinates);
 	}
 	
 	
@@ -125,7 +124,6 @@ public class SvmProcessor {
 	
 	
 	private void performPrediction(final svm_model model) {
-		
 		for(int entityCounter = 0; entityCounter < this.entityList.size(); entityCounter++) {
 			SvmPredictData svmPredictData = svm_predict(model, this.instances[entityCounter]);
 			this.predictedLabels[entityCounter] = svmPredictData.pred_result;
@@ -133,7 +131,30 @@ public class SvmProcessor {
 		}
 	}
 	
+	private double[] getCoordinatesOfW(final svm_model model) {
+		double[][] svCoefficients = model.sv_coef;
+		int numberOfSVs = model.l;
+		double[][] svMatrix = new double[numberOfSVs][this.numberOfCoordinates];
+		
+		for(int i = 0; i < numberOfSVs; i++)
+			for(int j = 0; j < this.numberOfCoordinates; j++)
+				svMatrix[i][j] = model.SV[i][j].value;
+		
+		double[][] coordinatesMatrix = new double[svCoefficients.length][this.numberOfCoordinates];
+		
+		for(int i = 0; i < svCoefficients.length; i++) 
+			for(int j = 0; j < this.numberOfCoordinates; j++) {
+				double cellValue = 0;
+				for(int k = 0; k < numberOfSVs; k++) 
+					cellValue += (svCoefficients[i][k] * svMatrix[k][j]);
+				
+				coordinatesMatrix[i][j] = cellValue * Integer.parseInt(this.lableDenoter);
+			}
+
+		return coordinatesMatrix[0];
+	}
 	
+
 	
 	private svm_parameter getSvmParam(final int zeroCounter) {
 		svm_parameter params = new svm_parameter();
@@ -185,24 +206,13 @@ public class SvmProcessor {
 			dec_values = new double[1];
 		else
 			dec_values = new double[nr_class*(nr_class-1)/2];
-		double pred_result = svm.svm_predict_values(model, x, dec_values);
-		if(dec_values == null)
-			System.out.println("Null");
-		else
-			System.out.println(dec_values.length + "  " + dec_values[0] + "  " + pred_result);
-			
+		double pred_result = svm.svm_predict_values(model, x, dec_values);			
 		return new SvmPredictData(pred_result, dec_values[0]);
 	}
 	
 	
 	private double calculateKappaScore(final double[] labels, double[] predictedLabels) {
-		
-		System.out.println(JsonObjectMapper.toJsonString(labels, true));
-		System.out.println(JsonObjectMapper.toJsonString(predictedLabels, true));
-		
-		
 		double[][] kappaMatrix = new double[3][3];
-		int value = 0;
 		for(int i = 0; i < labels.length; i++) {
 			if(labels[i] == 1 && predictedLabels[i] == 1)
 				kappaMatrix[0][0] += 1;
@@ -214,18 +224,14 @@ public class SvmProcessor {
 				kappaMatrix[0][1] += 1;
 		}
 		
-		
 		kappaMatrix[0][2] = kappaMatrix[0][0] + kappaMatrix[0][1];
 		kappaMatrix[1][2] = kappaMatrix[1][0] + kappaMatrix[1][1];
 		kappaMatrix[2][2] = kappaMatrix[0][2] + kappaMatrix[1][2];
 		kappaMatrix[2][0] = kappaMatrix[0][0] + kappaMatrix[1][0];
 		kappaMatrix[2][1] = kappaMatrix[0][1] + kappaMatrix[1][1];
 		
-		System.out.println(JsonObjectMapper.toJsonString(kappaMatrix, true));
-		
 		double PO = (kappaMatrix[0][0] + kappaMatrix[1][1]) / kappaMatrix[2][2];
 		double PE = ((kappaMatrix[2][0] * kappaMatrix[0][2]) + (kappaMatrix[2][1] * kappaMatrix[1][2])) / (kappaMatrix[2][2] * kappaMatrix[2][2]);
-		System.out.println("PO " + PO + " # PE " + PE);
 		
 		if(PE != 1)
 			return (PO - PE) / (1 - PE);

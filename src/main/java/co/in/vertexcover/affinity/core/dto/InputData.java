@@ -3,20 +3,28 @@ package co.in.vertexcover.affinity.core.dto;
 import java.util.List;
 import java.util.Map;
 
+import co.in.vertexcover.affinity.client.ProcessData;
 import co.in.vertexcover.affinity.core.pojo.Entity;
 import co.in.vertexcover.affinity.core.pojo.Term;
 
-public class InputData {
+public class InputData extends ProcessData {
 	private Map<String, Entity> entityData;
 	private Map<String, Term> termData;
 	private List<String> entityList;
 	private List<String> termList;
+	private double termDistributionRatio;
 	
 	public InputData(final Map<String, Entity> entityData, final Map<String, Term> termData, final List<String> entityList, final List<String> termList) {
 		this.entityData = entityData;
 		this.termData = termData;
 		this.entityList = entityList;
 		this.termList = termList;
+		
+		double termDistributionScores = 0;
+		for (Term term : termData.values()) {
+			termDistributionScores += term.getEntityExistenceStrength();
+		}
+		this.termDistributionRatio = (termDistributionScores) / (this.entityList.size() * this.termList.size());
 	}
 	
 	public Map<String, Entity> getEntityData() {
@@ -47,5 +55,14 @@ public class InputData {
 	public void setTermList(List<String> termList) {
 		this.termList = termList;
 	}
+
+	public double getTermDistributionRatio() {
+		return termDistributionRatio;
+	}
+
+	public void setTermDistributionRatio(double termDistributionRatio) {
+		this.termDistributionRatio = termDistributionRatio;
+	}
+	
 
 }

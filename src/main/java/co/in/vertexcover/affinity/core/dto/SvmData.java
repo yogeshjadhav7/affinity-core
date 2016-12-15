@@ -1,9 +1,15 @@
 package co.in.vertexcover.affinity.core.dto;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
-public class SvmData {
+import co.in.vertexcover.affinity.client.ProcessData;
+
+public class SvmData extends ProcessData {
 	
 	private String term;
 	private double kappaScore;
@@ -24,6 +30,27 @@ public class SvmData {
 			this.entityAffinity.put(entity, affinityScore[entityCounter]);
 			entityCounter++;
 		}
+		
+		sortMapByValues();
+		this.coordinatesOfW = cooredinatesOfW;
+	}
+	
+	private void sortMapByValues() {
+        List<Map.Entry<String, Double>> list =
+                new LinkedList<Map.Entry<String, Double>>(entityAffinity.entrySet());
+
+        Collections.sort(list, new Comparator<Map.Entry<String, Double>>() {
+            public int compare(Map.Entry<String, Double> object1, Map.Entry<String, Double> object2) {
+                return (object2.getValue()).compareTo(object1.getValue());
+            }
+        });
+
+        Map<String, Double> sortedMap = new LinkedHashMap<String, Double>();
+        for (Map.Entry<String, Double> entry : list) {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
+
+        this.entityAffinity = (LinkedHashMap<String, Double>) sortedMap;
 	}
 	
 	
