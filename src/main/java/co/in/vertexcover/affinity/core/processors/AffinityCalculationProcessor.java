@@ -2,19 +2,17 @@ package co.in.vertexcover.affinity.core.processors;
 
 import java.util.List;
 import java.util.Map;
-
 import co.in.vertexcover.affinity.core.dto.MdsData;
-import co.in.vertexcover.affinity.core.dto.SvmData;
-import co.in.vertexcover.affinity.core.dto.SvmPredictData;
+import co.in.vertexcover.affinity.core.dto.SvmTermData;
 import co.in.vertexcover.affinity.core.pojo.Entity;
-import co.in.vertexcover.affinity.helpers.JsonObjectMapper;
+import co.in.vertexcover.affinity.core.pojo.SVMPredict;
 import libsvm.svm;
 import libsvm.svm_model;
 import libsvm.svm_node;
 import libsvm.svm_parameter;
 import libsvm.svm_problem;
 
-public class SvmProcessor {
+public class AffinityCalculationProcessor {
 
 	private int scaleLength;
 	private String term;
@@ -36,9 +34,9 @@ public class SvmProcessor {
 	private Map<String, Entity> entityData;
 	
 	
-	public SvmProcessor() {}
+	public AffinityCalculationProcessor() {}
 	
-	public SvmProcessor(final int scaleLength, final String term, final MdsData mdsData) {
+	public AffinityCalculationProcessor(final int scaleLength, final String term, final MdsData mdsData) {
 		this.scaleLength = scaleLength;
 		this.term = term;
 		this.numberOfEntity = mdsData.getEntityList().size();
@@ -57,7 +55,7 @@ public class SvmProcessor {
 		this.entityData = mdsData.getEntityData();
 	}
 	
-	public SvmData process() {
+	public SvmTermData process() {
 		int zeroCounter = 0;
 		int currentRowNumber = 0;
 		
@@ -85,7 +83,7 @@ public class SvmProcessor {
 		processDecisionValues();
 		final double kappaScore = calculateKappaScore(labels, predictedLabels);
 		final double[] coordinates = getCoordinatesOfW(model);
-		return new SvmData(this.term, this.decisionValues, this.entityList, kappaScore, coordinates);
+		return new SvmTermData(this.term, this.decisionValues, this.entityList, kappaScore, coordinates);
 	}
 	
 	
@@ -125,7 +123,7 @@ public class SvmProcessor {
 	
 	private void performPrediction(final svm_model model) {
 		for(int entityCounter = 0; entityCounter < this.entityList.size(); entityCounter++) {
-			SvmPredictData svmPredictData = svm_predict(model, this.instances[entityCounter]);
+			SVMPredict svmPredictData = svm_predict(model, this.instances[entityCounter]);
 			this.predictedLabels[entityCounter] = svmPredictData.pred_result;
 			this.decisionValues[entityCounter] = svmPredictData.dec_values;
 		}
@@ -197,7 +195,7 @@ public class SvmProcessor {
 	}
 	
 
-	private SvmPredictData svm_predict(svm_model model, svm_node[] x) {
+	private SVMPredict svm_predict(svm_model model, svm_node[] x) {
 		int nr_class = model.nr_class;
 		double[] dec_values;
 		if(model.param.svm_type == svm_parameter.ONE_CLASS ||
@@ -207,7 +205,7 @@ public class SvmProcessor {
 		else
 			dec_values = new double[nr_class*(nr_class-1)/2];
 		double pred_result = svm.svm_predict_values(model, x, dec_values);			
-		return new SvmPredictData(pred_result, dec_values[0]);
+		return new SVMPredict(pred_result, dec_values[0]);
 	}
 	
 	

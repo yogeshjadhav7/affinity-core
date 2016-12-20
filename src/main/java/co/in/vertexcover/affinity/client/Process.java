@@ -2,19 +2,23 @@ package co.in.vertexcover.affinity.client;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 
+import co.in.vertexcover.affinity.helpers.JsonObjectMapper;
+
 public class Process {
 	
-	protected String processName;
-	protected Exception processException;
-	protected boolean processCompleted;
-	protected long processCompletedAt;
-	protected long processStartedAt;
-	protected boolean processInProgress;
-	protected File outputFile;
-	protected ProcessData processData;
+	final static private String AFFINITY_OBJECT_FILENAME = "AFFINITY.txt"; 
+	public String processName;
+	public Exception processException;
+	public boolean processCompleted;
+	public long processCompletedAt;
+	public long processStartedAt;
+	public boolean processInProgress;
+	public File outputFile;
+	public ProcessData processData;
 	
 	
 	public Process() {}
@@ -47,19 +51,41 @@ public class Process {
 	
 	
 	public void preProcess(final Affinity affinity) throws Exception {
-		
+		this.processInProgress = true;
+		this.processStartedAt = new Date().getTime();
 	}
 	
 	
-	public void mainProcess(final Affinity affinity) throws Exception {
-		
-	}
+	public void mainProcess(final Affinity affinity) throws Exception { }
 	
 	
 	public void postProcess(final Affinity affinity) throws Exception {
+		try {
+			final String fileContent = JsonObjectMapper.toJsonString(this.processData, true);
+			FileUtils.writeStringToFile(this.outputFile, fileContent, false);
+			saveAffinityObject(affinity);
+		} catch(Exception e) {
+			this.processException = e;
+		}
 		
+		this.processCompleted = true;
+		this.processCompletedAt = new Date().getTime();
+		if(this.processException != null) {
+			throw this.processException;
+		}
 	}
 	
-	
+	public static void saveAffinityObject(final Affinity affinity) throws Exception {
+		final String affinityObjectFilePath = affinity.getConfigurations().getROOT_PATH()
+				+ AFFINITY_OBJECT_FILENAME;
+		
+		File file = new File(affinityObjectFilePath);
+		try {
+			final String fileContent = JsonObjectMapper.toJsonString(affinity, true);
+			FileUtils.writeStringToFile(file, fileContent, false);
+		} catch(Exception e) {
+			throw e;
+		}
+	}
 	
 }

@@ -19,14 +19,14 @@ import co.in.vertexcover.affinity.core.dto.InputValidationData;
 import co.in.vertexcover.affinity.core.pojo.Entity;
 import co.in.vertexcover.affinity.core.pojo.Term;
 
-public class InputProcessor {
+public class InputValidationProcessor {
 	
 	private InputValidationData response;
 	private Map<String, Entity> entityData;
 	private Map<String, Term> termData;
 	private HashSet<String> termSet;
 	
-	public InputProcessor() {
+	public InputValidationProcessor() {
 		this.response = new InputValidationData();
 		this.response.setValid(true);
 		this.entityData = new HashMap<String, Entity>();

@@ -7,12 +7,12 @@ import org.apache.commons.io.FileUtils;
 
 import co.in.vertexcover.affinity.core.dto.InputData;
 import co.in.vertexcover.affinity.core.dto.InputValidationData;
-import co.in.vertexcover.affinity.core.processors.InputProcessor;
+import co.in.vertexcover.affinity.core.processors.InputValidationProcessor;
 import co.in.vertexcover.affinity.helpers.JsonObjectMapper;
 
 public class InputValidation extends Process {
 	
-	final static private String PROCESS_NAME = "INPUT_VALIDATION";
+	final static public String PROCESS_NAME = "INPUT_VALIDATION";
 	private File inputFile;
 	
 	
@@ -32,9 +32,7 @@ public class InputValidation extends Process {
 	
 	@Override
 	public void preProcess(final Affinity affinity) throws Exception {
-		this.processInProgress = true;
-		this.processStartedAt = new Date().getTime();
-		
+		super.preProcess(affinity);
 		if(inputFile == null || !inputFile.exists()) {
 			this.processException = new Exception("Input file at path " + inputFile.getAbsolutePath() + " doesn't exist");
 			throw this.processException;
@@ -44,7 +42,7 @@ public class InputValidation extends Process {
 	
 	@Override
 	public void mainProcess(final Affinity affinity) throws Exception {
-    	InputValidationData inputValidationData = new InputProcessor().validate(inputFile, affinity.getConfigurations().getMIN_TERM_OCCURENCE_PERCENTAGE());
+    	InputValidationData inputValidationData = new InputValidationProcessor().validate(inputFile, affinity.getConfigurations().getMIN_TERM_OCCURENCE_PERCENTAGE());
     	if(!inputValidationData.isValid()) {
     		this.processException = new Exception(inputValidationData.getErrorMessage());
     		throw this.processException;
@@ -52,24 +50,5 @@ public class InputValidation extends Process {
     	
     	this.processData = inputValidationData.getInputData();
 	}
-	
-	
-	
-	@Override
-	public void postProcess(final Affinity affinity) throws Exception {
-		try {
-			final String fileContent = JsonObjectMapper.toJsonString(this.processData, true);
-			FileUtils.writeStringToFile(this.outputFile, fileContent, false);
-		} catch(Exception e) {
-			this.processException = e;
-		}
-		
-		this.processCompleted = true;
-		this.processCompletedAt = new Date().getTime();
-		if(this.processException != null) {
-			throw this.processException;
-		}
-	}
-	
 
 }

@@ -28,6 +28,7 @@ public class JsonObjectMapper {
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	public static Object toObject(String jsonString, Class cls) {
 		try {
 			return new ObjectMapper().readValue(jsonString, cls);

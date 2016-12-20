@@ -10,11 +10,11 @@ import co.in.vertexcover.affinity.core.pojo.Entity;
 import co.in.vertexcover.affinity.helpers.JsonObjectMapper;
 import mdsj.MDSJ;
 
-public class MatrixProcessor {
+public class InputProcessingProcessor {
 
 	private InputData inputData;
 	
-	public MatrixProcessor(final InputData inputData) {
+	public InputProcessingProcessor(final InputData inputData) {
 		this.inputData = inputData;
 	}
 	

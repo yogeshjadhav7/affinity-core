@@ -9,7 +9,7 @@ import java.util.Map;
 
 import co.in.vertexcover.affinity.client.ProcessData;
 
-public class SvmData extends ProcessData {
+public class SvmTermData extends ProcessData {
 	
 	private String term;
 	private double kappaScore;
@@ -17,9 +17,9 @@ public class SvmData extends ProcessData {
 	private double[] coordinatesOfW;
 	
 	
-	public SvmData() {}
+	public SvmTermData() {}
 	
-	public SvmData(final String term, final double[] affinityScore, final List<String> entityList, final double kappaScore,
+	public SvmTermData(final String term, final double[] affinityScore, final List<String> entityList, final double kappaScore,
 			final double[] cooredinatesOfW) {
 		
 		this.term = term;

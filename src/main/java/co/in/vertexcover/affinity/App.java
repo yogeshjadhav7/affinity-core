@@ -7,24 +7,24 @@ import org.apache.commons.io.FileUtils;
 
 import co.in.vertexcover.affinity.core.dto.InputValidationData;
 import co.in.vertexcover.affinity.core.dto.MdsData;
-import co.in.vertexcover.affinity.core.dto.SvmData;
-import co.in.vertexcover.affinity.core.dto.SvmProcessData;
-import co.in.vertexcover.affinity.core.dto.TermRelationData;
+import co.in.vertexcover.affinity.core.dto.SvmTermData;
+import co.in.vertexcover.affinity.core.dto.AffinityCalculationData;
+import co.in.vertexcover.affinity.core.dto.TermBondCalculationData;
 import co.in.vertexcover.affinity.core.pojo.Term;
-import co.in.vertexcover.affinity.core.processors.InputProcessor;
-import co.in.vertexcover.affinity.core.processors.MatrixProcessor;
-import co.in.vertexcover.affinity.core.processors.SvmProcessor;
-import co.in.vertexcover.affinity.core.processors.TermRelationProcessor;
+import co.in.vertexcover.affinity.core.processors.InputValidationProcessor;
+import co.in.vertexcover.affinity.core.processors.InputProcessingProcessor;
+import co.in.vertexcover.affinity.core.processors.AffinityCalculationProcessor;
+import co.in.vertexcover.affinity.core.processors.TermBondCalculationProcessor;
 import co.in.vertexcover.affinity.helpers.JsonObjectMapper;
 
 public class App {
     public static void main( String[] args ) throws IOException {
     
-    	
+    	/*
 		final String inputFileName = "input.txt";
 		final String inputFilePath = App.getProjectPath() + "affinity-data" + File.separator + inputFileName;  
     	File inputFile = new File(inputFilePath);
-    	InputValidationData ipResponse = new InputProcessor().validate(inputFile, 0);
+    	InputValidationData ipResponse = new InputValidationProcessor().validate(inputFile, 0);
     	if(!ipResponse.isValid()) {
     		System.out.println(ipResponse.getErrorMessage());
     		return;
@@ -40,7 +40,7 @@ public class App {
     	
     	int entityStrength = (ipResponse.getInputData().getEntityList().size() >= 50)?(50):(ipResponse.getInputData().getEntityList().size());
     	int mdsDimensions = (int) ((entityStrength / 2) *(1 + ipResponse.getInputData().getTermDistributionRatio()));
-    	MdsData mdsData = new MatrixProcessor(ipResponse.getInputData()).process(mdsDimensions);
+    	MdsData mdsData = new InputProcessingProcessor(ipResponse.getInputData()).process(mdsDimensions);
     	System.out.println("MDS done" + mdsData.getTermList().size());
     	
     	final String mdsOutputFileName = "mdsOutput.txt";
@@ -49,7 +49,7 @@ public class App {
     	FileUtils.writeStringToFile(mdsOutputFile, "", false);
     	String line = JsonObjectMapper.toJsonString(mdsData, true);
     	FileUtils.writeStringToFile(mdsOutputFile, line, true);
-    	
+    	*/
     
     	
     	/*
@@ -57,34 +57,34 @@ public class App {
     	final String mdsOutputFilePath = App.getProjectPath() + "affinity-data" + File.separator + mdsOutputFileName;
     	File mdsOutputFile = new File(mdsOutputFilePath);
     	String mdsDataString = FileUtils.readFileToString(mdsOutputFile);
-    	MdsData mdsData = (MdsData) new JsonObjectMapper().toObject(mdsDataString, MdsData.class);
+    	MdsData mdsData = (MdsData) JsonObjectMapper.toObject(mdsDataString, MdsData.class);
 		final String outputFileName = "output.txt";
 		final String outputFilePath = App.getProjectPath() + "affinity-data" + File.separator + outputFileName;  
     	File outputFile = new File(outputFilePath);
     	FileUtils.writeStringToFile(outputFile, "", false);
-    	SvmProcessData processData = new SvmProcessData();
+    	AffinityCalculationData processData = new AffinityCalculationData();
     	
     	for(String term : mdsData.getTermList()) {
     		System.out.println("Processing for term " + term);
-    		SvmData svmData = new SvmProcessor(10, term, mdsData).process();
+    		SvmTermData svmData = new AffinityCalculationProcessor(10, term, mdsData).process();
     		processData.addToData(svmData);
     		FileUtils.writeStringToFile(outputFile, JsonObjectMapper.toJsonString(processData, true), false);
     	}
     	*/
     	
-    	/*
+    	
     	final String outputFileName = "output.txt";
     	final String outputFilePath = App.getProjectPath() + "affinity-data" + File.separator + outputFileName;
     	File outputFile = new File(outputFilePath);
     	String outputDataString = FileUtils.readFileToString(outputFile);
-    	SvmProcessData svmProcessData = (SvmProcessData) JsonObjectMapper.toObject(outputDataString, SvmProcessData.class);
+    	AffinityCalculationData svmProcessData = (AffinityCalculationData) JsonObjectMapper.toObject(outputDataString, AffinityCalculationData.class);
 		final String termRelationFileName = "term-relation.txt";
 		final String termRelationFilePath = App.getProjectPath() + "affinity-data" + File.separator + termRelationFileName;  
     	File termRelationFile = new File(termRelationFilePath);
     	FileUtils.writeStringToFile(termRelationFile, "", false);
-    	TermRelationData termRelationData = new TermRelationProcessor().getTermRelation(svmProcessData);
+    	TermBondCalculationData termRelationData = new TermBondCalculationProcessor().getTermBonds(svmProcessData, 100);
     	FileUtils.writeStringToFile(termRelationFile, JsonObjectMapper.toJsonString(termRelationData, true), false);
-    	*/
+    	
     	
     }
     
