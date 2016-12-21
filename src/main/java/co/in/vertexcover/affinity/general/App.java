@@ -7,8 +7,8 @@ public class App {
 
 	 public static void main( String[] args ) throws Exception {
 		 
-		 Session session = new Session("MyFirstSession", StringUtils.generateRandomString(10));
-		 session.startProcess("C:\\YogiBear\\Development\\Eclipse\\Workspace\\affinity-core\\affinity-data\\input.txt");
+		 Session session = new Session("MyFirstSession", "12345");
+		 session.startProcess("Y:\\New Folder\\input.txt");
 		 
 	 }
 	

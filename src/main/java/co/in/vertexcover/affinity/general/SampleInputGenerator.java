@@ -13,7 +13,7 @@ public class SampleInputGenerator {
 	public static void main(String[] args) throws IOException {
 		
 		final String inputFileName = "input.txt";
-		String inputFilePath = "/Users/data/" + inputFileName;  
+		String inputFilePath = "Y:\\New Folder\\" + inputFileName;  
 		File f = new File(inputFilePath);
 		FileUtils.writeStringToFile(f, "", false);
 		
@@ -25,11 +25,11 @@ public class SampleInputGenerator {
 				String s = "";
 				s += Integer.toString((int)(Math.random() * 10));
 				s += Integer.toString((int)(Math.random() * 10));
-				set.add(s);
+				set.add("term" + s);
 			}
 			
 			for (String s : set) {
-			    int rand100 = (int)(Math.random() * 10000);
+			    int rand100 = (int)(Math.random() * 10000) / (int)(Math.random() * 10 + 1);
 			    String line = e + "," + s + "," + (rand100 + 1) + "\n";
 			    FileUtils.writeStringToFile(f, line, true);
 			    System.out.println(line);
