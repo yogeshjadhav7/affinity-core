@@ -2,7 +2,7 @@ package co.in.vertexcover.affinity.core.dto;
 
 import java.util.HashMap;
 
-import co.in.vertexcover.affinity.client.ProcessData;
+import co.in.vertexcover.affinity.client.process.ProcessData;
 
 public class TermBondCalculationData extends ProcessData {
 

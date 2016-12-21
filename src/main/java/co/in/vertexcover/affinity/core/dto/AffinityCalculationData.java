@@ -3,7 +3,7 @@ package co.in.vertexcover.affinity.core.dto;
 import java.util.HashMap;
 import java.util.Map;
 
-import co.in.vertexcover.affinity.client.ProcessData;
+import co.in.vertexcover.affinity.client.process.ProcessData;
 
 public class AffinityCalculationData extends ProcessData {
 

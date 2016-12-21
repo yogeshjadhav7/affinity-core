@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import co.in.vertexcover.affinity.client.ProcessData;
+import co.in.vertexcover.affinity.client.process.ProcessData;
 
 public class SvmTermData extends ProcessData {
 	

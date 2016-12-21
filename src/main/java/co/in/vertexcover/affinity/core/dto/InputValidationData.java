@@ -1,6 +1,6 @@
 package co.in.vertexcover.affinity.core.dto;
 
-import co.in.vertexcover.affinity.client.ProcessData;
+import co.in.vertexcover.affinity.client.process.ProcessData;
 
 public class InputValidationData extends ProcessData {
 

@@ -3,7 +3,7 @@ package co.in.vertexcover.affinity.core.dto;
 import java.util.List;
 import java.util.Map;
 
-import co.in.vertexcover.affinity.client.ProcessData;
+import co.in.vertexcover.affinity.client.process.ProcessData;
 import co.in.vertexcover.affinity.core.pojo.Entity;
 import co.in.vertexcover.affinity.core.pojo.Term;
 
