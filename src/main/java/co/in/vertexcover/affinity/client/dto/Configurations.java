@@ -6,7 +6,7 @@ import co.in.vertexcover.affinity.core.pojo.Term;
 public class Configurations {
 
 	final private int MAX_MDS_DIMENSIONS = 50;
-	final private double MIN_TERM_OCCURENCE_PERCENTAGE_DEFAULT = 2;
+	final private double MIN_TERM_OCCURENCE_PERCENTAGE_DEFAULT = 0;
 	private double TERM_OVERLAPPING_RATIO;
 	private int MDS_DIMENSIONS;
 	private double MIN_TERM_OCCURENCE_PERCENTAGE = MIN_TERM_OCCURENCE_PERCENTAGE_DEFAULT;
@@ -51,8 +51,8 @@ public class Configurations {
 			this.TERM_OVERLAPPING_RATIO += term.getEntityExistenceStrength();
 		}
 		this.TERM_OVERLAPPING_RATIO /= (inputData.getEntityList().size() * inputData.getTermList().size());
-		this.MDS_DIMENSIONS = (inputData.getEntityList().size() < this.MAX_MDS_DIMENSIONS)?inputData.getEntityList().size():this.MAX_MDS_DIMENSIONS;
-		this.MDS_DIMENSIONS *=  (0.5 * (1 + TERM_OVERLAPPING_RATIO));
+		this.MDS_DIMENSIONS = (inputData.getEntityList().size() < this.MAX_MDS_DIMENSIONS)?(inputData.getEntityList().size() - 1):this.MAX_MDS_DIMENSIONS;
+		this.MDS_DIMENSIONS *=  (0.75 + 0.25 * TERM_OVERLAPPING_RATIO);
 	}
 
 	
