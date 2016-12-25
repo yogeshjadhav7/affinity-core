@@ -58,7 +58,7 @@
 
   
   	<build>
-		<finalName>dateutils</finalName>
+		<finalName>affinity-core</finalName>
 		<plugins>
 
 			<!-- download source code in Eclipse, best practice -->
@@ -103,8 +103,7 @@
 				</configuration>
 				<executions>
 				  <execution>
-					<id>make-assembly</id>
-                                       
+					<id>make-assembly</id>                        
 					<phase>package</phase>
 					<goals>
 						<goal>single</goal>
