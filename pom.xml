@@ -16,6 +16,7 @@
   </properties>
 
   <dependencies>
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -32,10 +33,33 @@
 		<artifactId>commons-csv</artifactId>
 		<version>1.2</version>
 	</dependency>
+  	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.4</version>
+	</dependency>
+	<dependency>
+		<groupId>libsvm</groupId>
+		<artifactId>libsvm</artifactId>
+		<version>1.0.0</version>
+		<scope>system</scope>
+    	<systemPath>${basedir}/libs/libsvm.jar</systemPath>
+	</dependency>
+		<dependency>
+		<groupId>mdsj</groupId>
+		<artifactId>mdsj</artifactId>
+		<version>1.0.0</version>
+		<scope>system</scope>
+    	<systemPath>${basedir}/libs/mdsj.jar</systemPath>
+	</dependency>
+	
   </dependencies>
   
-  <build>
-	  <plugins>
+
+  
+  	<build>
+		<finalName>dateutils</finalName>
+		<plugins>
 
 			<!-- download source code in Eclipse, best practice -->
 			<plugin>
@@ -47,8 +71,18 @@
 					<downloadJavadocs>false</downloadJavadocs>
 				</configuration>
 			</plugin>
-			
-			
+
+			<!-- Set a compiler level -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+
 			<!-- Maven Assembly Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -62,7 +96,7 @@
 					<!-- MainClass in mainfest make a executable jar -->
 					<archive>
 					  <manifest>
-						<mainClass>co.in.vertexcover.affinity.core.api.AffinityAPI</mainClass>
+						<mainClass>co.in.vertexcover.affinity.client.api.AffinityAPI</mainClass>
 					  </manifest>
 					</archive>
 
@@ -70,7 +104,7 @@
 				<executions>
 				  <execution>
 					<id>make-assembly</id>
-                    <!-- bind to the packaging phase -->
+                                       
 					<phase>package</phase>
 					<goals>
 						<goal>single</goal>
@@ -78,10 +112,8 @@
 				  </execution>
 				</executions>
 			</plugin>
-			
-			
-	  </plugins>
-  </build>
-  
+
+		</plugins>
+	</build>
   
 </project>
