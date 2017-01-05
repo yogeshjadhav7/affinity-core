@@ -21,13 +21,13 @@ public class Session {
 	}
 	
 	
-	public void startProcess(final String inputFilePath) {
+	public void startProcess(final String inputFilePath) throws Exception {
 		this.affinity = new Affinity(StringUtils.createAffinityId(this.sessionName, this.sessionId));
 		AffinityStarter.start(inputFilePath, affinity);
 		
 	}
 	
-	public void startProcess(final String inputFilePath, final Configurations configurations) {
+	public void startProcess(final String inputFilePath, final Configurations configurations) throws Exception {
 		this.affinity = new Affinity(StringUtils.createAffinityId(this.sessionName, this.sessionId));
 		AffinityStarter.start(inputFilePath, affinity);
 	}

@@ -2,486 +2,486 @@
   "entityData" : {
     "Strawberry_broth" : {
       "entityName" : "Strawberry_broth",
-      "sumOfTermWeights" : 99999,
+      "sumOfTermWeights" : 1287,
       "termStrength" : 3,
       "termWeight" : {
-        "Malic_acid" : 932,
-        "Strawberry" : 77700,
-        "Sugar" : 21367
+        "Malic_acid" : 12,
+        "Strawberry" : 1000,
+        "Sugar" : 275
       }
     },
     "Biscuit" : {
       "entityName" : "Biscuit",
-      "sumOfTermWeights" : 99995,
+      "sumOfTermWeights" : 1161,
       "termStrength" : 7,
       "termWeight" : {
-        "All-purpose_flour" : 38759,
-        "Salt" : 344,
-        "Baking_powder" : 1291,
-        "Egg" : 4306,
-        "Butter" : 14642,
-        "Cream" : 38759,
-        "Sugar" : 1894
+        "All-purpose_flour" : 450,
+        "Salt" : 4,
+        "Baking_powder" : 15,
+        "Egg" : 50,
+        "Butter" : 170,
+        "Cream" : 450,
+        "Sugar" : 22
       }
     },
     "Cheddar_cheese_sauce" : {
       "entityName" : "Cheddar_cheese_sauce",
-      "sumOfTermWeights" : 99998,
+      "sumOfTermWeights" : 613,
       "termStrength" : 6,
       "termWeight" : {
-        "Salt" : 489,
-        "Sodium_hexametaphosphate" : 163,
-        "Sodium_citrate" : 1468,
-        "Cheddar" : 14192,
-        "Emmenthal" : 34747,
-        "Milk" : 48939
+        "Salt" : 3,
+        "Sodium_hexametaphosphate" : 1,
+        "Sodium_citrate" : 9,
+        "Cheddar" : 87,
+        "Emmenthal" : 213,
+        "Milk" : 300
       }
     },
     "Carrot_salad" : {
       "entityName" : "Carrot_salad",
-      "sumOfTermWeights" : 99999,
+      "sumOfTermWeights" : 865,
       "termStrength" : 7,
       "termWeight" : {
-        "Carrot" : 69364,
-        "Oil" : 6936,
-        "Mint" : 1156,
-        "Chaat_masala" : 1156,
-        "Cilantro" : 1734,
-        "Lemon" : 2312,
-        "Greek_yogurt" : 17341
+        "Carrot" : 600,
+        "Oil" : 60,
+        "Mint" : 10,
+        "Chaat_masala" : 10,
+        "Cilantro" : 15,
+        "Lemon" : 20,
+        "Greek_yogurt" : 150
       }
     },
     "Basil_oil" : {
       "entityName" : "Basil_oil",
-      "sumOfTermWeights" : 99999,
+      "sumOfTermWeights" : 700,
       "termStrength" : 2,
       "termWeight" : {
-        "Oil" : 64285,
-        "Basil" : 35714
+        "Oil" : 450,
+        "Basil" : 250
       }
     },
     "Carrot_cake" : {
       "entityName" : "Carrot_cake",
-      "sumOfTermWeights" : 99993,
+      "sumOfTermWeights" : 16070,
       "termStrength" : 13,
       "termWeight" : {
-        "Carrot" : 49782,
-        "Baking_soda" : 161,
-        "Butter" : 4978,
-        "Rum" : 8711,
-        "Vanilla_extract" : 622,
-        "Salt" : 360,
-        "Cream_cheese" : 6969,
-        "Mace" : 62,
-        "Raisins" : 2177,
-        "Cinnamon" : 435,
-        "Sugar" : 8587,
-        "Green_cardamom" : 37,
-        "Milk" : 17112
+        "Carrot" : 8000,
+        "Baking_soda" : 26,
+        "Butter" : 800,
+        "Rum" : 1400,
+        "Vanilla_extract" : 100,
+        "Salt" : 58,
+        "Cream_cheese" : 1120,
+        "Mace" : 10,
+        "Raisins" : 350,
+        "Cinnamon" : 70,
+        "Sugar" : 1380,
+        "Green_cardamom" : 6,
+        "Milk" : 2750
       }
     },
     "Honey_butter" : {
       "entityName" : "Honey_butter",
-      "sumOfTermWeights" : 99998,
+      "sumOfTermWeights" : 629,
       "termStrength" : 3,
       "termWeight" : {
-        "Salt" : 635,
-        "Honey" : 27821,
-        "Butter" : 71542
+        "Salt" : 4,
+        "Honey" : 175,
+        "Butter" : 450
       }
     },
     "Eggs_benedict" : {
       "entityName" : "Eggs_benedict",
-      "sumOfTermWeights" : 99995,
+      "sumOfTermWeights" : 323,
       "termStrength" : 6,
       "termWeight" : {
-        "Salt" : 928,
-        "Onion" : 7739,
-        "Egg_yolk" : 26315,
-        "Butter" : 46439,
-        "Vinegar" : 12383,
-        "Lemon" : 6191
+        "Salt" : 3,
+        "Onion" : 25,
+        "Egg_yolk" : 85,
+        "Butter" : 150,
+        "Vinegar" : 40,
+        "Lemon" : 20
       }
     },
     "French_fries" : {
       "entityName" : "French_fries",
-      "sumOfTermWeights" : 99997,
+      "sumOfTermWeights" : 12275,
       "termStrength" : 4,
       "termWeight" : {
-        "Potato" : 97759,
-        "Salt" : 1221,
-        "Baking_soda" : 203,
-        "Sugar" : 814
+        "Potato" : 12000,
+        "Salt" : 150,
+        "Baking_soda" : 25,
+        "Sugar" : 100
       }
     },
     "Radicchio_salad" : {
       "entityName" : "Radicchio_salad",
-      "sumOfTermWeights" : 99996,
+      "sumOfTermWeights" : 295,
       "termStrength" : 7,
       "termWeight" : {
-        "Radicchio" : 40677,
-        "Salt" : 3389,
-        "Oil" : 13559,
-        "Hazelnuts" : 8474,
-        "Cheese" : 13559,
-        "Chives" : 3389,
-        "Buttermilk" : 16949
+        "Radicchio" : 120,
+        "Salt" : 10,
+        "Oil" : 40,
+        "Hazelnuts" : 25,
+        "Cheese" : 40,
+        "Chives" : 10,
+        "Buttermilk" : 50
       }
     },
     "Potato_salad" : {
       "entityName" : "Potato_salad",
-      "sumOfTermWeights" : 99994,
+      "sumOfTermWeights" : 1178,
       "termStrength" : 11,
       "termWeight" : {
-        "Potato" : 42444,
-        "Salt" : 6366,
-        "Celery_leaf" : 1697,
-        "Egg" : 4244,
-        "Celery" : 7640,
-        "Celery_seed" : 254,
-        "Pickled_Onions" : 12733,
-        "Mustard" : 6791,
-        "Cucumber" : 10186,
-        "Mayo" : 6366,
-        "Chives" : 1273
+        "Potato" : 500,
+        "Salt" : 75,
+        "Celery_leaf" : 20,
+        "Egg" : 50,
+        "Celery" : 90,
+        "Celery_seed" : 3,
+        "Pickled_Onions" : 150,
+        "Mustard" : 80,
+        "Cucumber" : 120,
+        "Mayo" : 75,
+        "Chives" : 15
       }
     },
     "Baked_beans" : {
       "entityName" : "Baked_beans",
-      "sumOfTermWeights" : 99992,
+      "sumOfTermWeights" : 890,
       "termStrength" : 13,
       "termWeight" : {
-        "Black_pepper" : 112,
-        "Molasses" : 4494,
-        "Baking_soda" : 561,
-        "Onion" : 22471,
-        "Worcestershire_sauce" : 1348,
-        "Tomato" : 8988,
-        "Bacon" : 26966,
-        "Vinegar" : 3595,
-        "Salt" : 1797,
-        "Beans" : 22471,
-        "Brown_sugar" : 4494,
-        "Garlic" : 1797,
-        "Mustard" : 898
+        "Black_pepper" : 1,
+        "Molasses" : 40,
+        "Baking_soda" : 5,
+        "Onion" : 200,
+        "Worcestershire_sauce" : 12,
+        "Tomato" : 80,
+        "Bacon" : 240,
+        "Vinegar" : 32,
+        "Salt" : 16,
+        "Beans" : 200,
+        "Brown_sugar" : 40,
+        "Garlic" : 16,
+        "Mustard" : 8
       }
     },
     "Tartar_sauce" : {
       "entityName" : "Tartar_sauce",
-      "sumOfTermWeights" : 99998,
+      "sumOfTermWeights" : 787,
       "termStrength" : 6,
       "termWeight" : {
-        "Salt" : 254,
-        "Celery" : 6353,
-        "Onion" : 15883,
-        "Cornichons" : 9529,
-        "Lemon" : 4447,
-        "Mayo" : 63532
+        "Salt" : 2,
+        "Celery" : 50,
+        "Onion" : 125,
+        "Cornichons" : 75,
+        "Lemon" : 35,
+        "Mayo" : 500
       }
     },
     "Chicken_and_mushroom" : {
       "entityName" : "Chicken_and_mushroom",
-      "sumOfTermWeights" : 99997,
+      "sumOfTermWeights" : 545,
       "termStrength" : 5,
       "termWeight" : {
-        "Salt" : 917,
-        "Mushroom" : 18348,
-        "Basil" : 5504,
-        "Chicken" : 73394,
-        "Thyme" : 1834
+        "Salt" : 5,
+        "Mushroom" : 100,
+        "Basil" : 30,
+        "Chicken" : 400,
+        "Thyme" : 10
       }
     },
     "Eggnog" : {
       "entityName" : "Eggnog",
-      "sumOfTermWeights" : 99995,
+      "sumOfTermWeights" : 10874,
       "termStrength" : 8,
       "termWeight" : {
-        "Nutmeg" : 110,
-        "Almond" : 36,
-        "Egg_yolk" : 11035,
-        "Cream" : 18392,
-        "Clove" : 73,
-        "Rum" : 459,
-        "Sugar" : 14713,
-        "Milk" : 55177
+        "Nutmeg" : 12,
+        "Almond" : 4,
+        "Egg_yolk" : 1200,
+        "Cream" : 2000,
+        "Clove" : 8,
+        "Rum" : 50,
+        "Sugar" : 1600,
+        "Milk" : 6000
       }
     },
     "Chocolate-chip_cookie" : {
       "entityName" : "Chocolate-chip_cookie",
-      "sumOfTermWeights" : 99995,
+      "sumOfTermWeights" : 1440,
       "termStrength" : 9,
       "termWeight" : {
-        "All-purpose_flour" : 27777,
-        "Salt" : 1041,
-        "Baking_soda" : 347,
-        "Butter" : 15277,
-        "Chocolate" : 20833,
-        "Brown_sugar" : 13888,
-        "Vanilla_extract" : 1388,
-        "Sugar" : 12500,
-        "Eggs" : 6944
+        "All-purpose_flour" : 400,
+        "Salt" : 15,
+        "Baking_soda" : 5,
+        "Butter" : 220,
+        "Chocolate" : 300,
+        "Brown_sugar" : 200,
+        "Vanilla_extract" : 20,
+        "Sugar" : 180,
+        "Eggs" : 100
       }
     },
     "Chewy_candy" : {
       "entityName" : "Chewy_candy",
-      "sumOfTermWeights" : 99994,
+      "sumOfTermWeights" : 14125,
       "termStrength" : 7,
       "termWeight" : {
-        "Glucose_syrup" : 42477,
-        "Gum_arabic" : 247,
-        "Gelatin" : 2123,
-        "Citrus_Oil" : 424,
-        "Citric_acid" : 1274,
-        "Shortening" : 9203,
-        "Sugar" : 44246
+        "Glucose_syrup" : 6000,
+        "Gum_arabic" : 35,
+        "Gelatin" : 300,
+        "Citrus_Oil" : 60,
+        "Citric_acid" : 180,
+        "Shortening" : 1300,
+        "Sugar" : 6250
       }
     },
     "Buttermilk_biscuit" : {
       "entityName" : "Buttermilk_biscuit",
-      "sumOfTermWeights" : 99996,
+      "sumOfTermWeights" : 1126,
       "termStrength" : 7,
       "termWeight" : {
-        "All-purpose_flour" : 41296,
-        "Salt" : 355,
-        "Baking_powder" : 1332,
-        "Egg" : 4440,
-        "Butter" : 15097,
-        "Sugar" : 1953,
-        "Buttermilk" : 35523
+        "All-purpose_flour" : 465,
+        "Salt" : 4,
+        "Baking_powder" : 15,
+        "Egg" : 50,
+        "Butter" : 170,
+        "Sugar" : 22,
+        "Buttermilk" : 400
       }
     },
     "Strawberry_juice" : {
       "entityName" : "Strawberry_juice",
-      "sumOfTermWeights" : 99999,
+      "sumOfTermWeights" : 270,
       "termStrength" : 2,
       "termWeight" : {
-        "Strawberries" : 74074,
-        "Sugar" : 25925
+        "Strawberries" : 200,
+        "Sugar" : 70
       }
     },
     "Mustard_potato_salad" : {
       "entityName" : "Mustard_potato_salad",
-      "sumOfTermWeights" : 99995,
+      "sumOfTermWeights" : 1128,
       "termStrength" : 8,
       "termWeight" : {
-        "Potato" : 70921,
-        "Salt" : 354,
-        "Black_pepper" : 177,
-        "Butter" : 2659,
-        "Mustard" : 4609,
-        "Vinegar" : 2836,
-        "Mayo" : 17730,
-        "Chives" : 709
+        "Potato" : 800,
+        "Salt" : 4,
+        "Black_pepper" : 2,
+        "Butter" : 30,
+        "Mustard" : 52,
+        "Vinegar" : 32,
+        "Mayo" : 200,
+        "Chives" : 8
       }
     },
     "Chocolate_cake" : {
       "entityName" : "Chocolate_cake",
-      "sumOfTermWeights" : 99994,
+      "sumOfTermWeights" : 3920,
       "termStrength" : 12,
       "termWeight" : {
-        "Cocoa_powder" : 7142,
-        "Salt" : 637,
-        "Baking_powder" : 382,
-        "Baking_soda" : 382,
-        "Egg" : 3826,
-        "Butter" : 11479,
-        "Cake_flour" : 10714,
-        "Canola_oil" : 8673,
-        "Vanilla_extract" : 1403,
-        "Sugar" : 43877,
-        "Buttermilk" : 8673,
-        "Milk" : 2806
+        "Cocoa_powder" : 280,
+        "Salt" : 25,
+        "Baking_powder" : 15,
+        "Baking_soda" : 15,
+        "Egg" : 150,
+        "Butter" : 450,
+        "Cake_flour" : 420,
+        "Canola_oil" : 340,
+        "Vanilla_extract" : 55,
+        "Sugar" : 1720,
+        "Buttermilk" : 340,
+        "Milk" : 110
       }
     },
     "Donuts" : {
       "entityName" : "Donuts",
-      "sumOfTermWeights" : 99994,
+      "sumOfTermWeights" : 1373,
       "termStrength" : 7,
       "termWeight" : {
-        "All-purpose_flour" : 43699,
-        "Salt" : 873,
-        "Baking_powder" : 1092,
-        "Egg_yolk" : 6554,
-        "Butter" : 2621,
-        "Sour_cream" : 27676,
-        "Sugar" : 17479
+        "All-purpose_flour" : 600,
+        "Salt" : 12,
+        "Baking_powder" : 15,
+        "Egg_yolk" : 90,
+        "Butter" : 36,
+        "Sour_cream" : 380,
+        "Sugar" : 240
       }
     },
     "Tomato_soup" : {
       "entityName" : "Tomato_soup",
-      "sumOfTermWeights" : 99996,
+      "sumOfTermWeights" : 1688,
       "termStrength" : 7,
       "termWeight" : {
-        "Salt" : 414,
-        "Black_pepper" : 177,
-        "Oil" : 14810,
-        "Onion" : 1777,
-        "Basil" : 5331,
-        "Garlic" : 473,
-        "Tomato" : 77014
+        "Salt" : 7,
+        "Black_pepper" : 3,
+        "Oil" : 250,
+        "Onion" : 30,
+        "Basil" : 90,
+        "Garlic" : 8,
+        "Tomato" : 1300
       }
     },
     "Fried_chicken" : {
       "entityName" : "Fried_chicken",
-      "sumOfTermWeights" : 199996,
+      "sumOfTermWeights" : 5390,
       "termStrength" : 9,
       "termWeight" : {
-        "All-purpose_flour" : 13992,
-        "Salt" : 652,
-        "Black_pepper" : 100000,
-        "Oil" : 37313,
-        "Paprika" : 466,
-        "Onion" : 3731,
-        "Chicken" : 33582,
-        "Garlic" : 932,
-        "Buttermilk" : 9328
+        "All-purpose_flour" : 750,
+        "Salt" : 35,
+        "Black_pepper" : 30,
+        "Oil" : 2000,
+        "Paprika" : 25,
+        "Onion" : 200,
+        "Chicken" : 1800,
+        "Garlic" : 50,
+        "Buttermilk" : 500
       }
     },
     "Red_coleslaw" : {
       "entityName" : "Red_coleslaw",
-      "sumOfTermWeights" : 99993,
+      "sumOfTermWeights" : 472,
       "termStrength" : 10,
       "termWeight" : {
-        "Salt" : 1059,
-        "Black_pepper" : 211,
-        "Carrot" : 12711,
-        "Onion" : 19067,
-        "Celery_seed" : 211,
-        "Cabbage" : 42372,
-        "Mustard" : 6355,
-        "Vinegar" : 10593,
-        "Sugar" : 4237,
-        "Chives" : 3177
+        "Salt" : 5,
+        "Black_pepper" : 1,
+        "Carrot" : 60,
+        "Onion" : 90,
+        "Celery_seed" : 1,
+        "Cabbage" : 200,
+        "Mustard" : 30,
+        "Vinegar" : 50,
+        "Sugar" : 20,
+        "Chives" : 15
       }
     },
     "Banana_custard" : {
       "entityName" : "Banana_custard",
-      "sumOfTermWeights" : 99996,
+      "sumOfTermWeights" : 4315,
       "termStrength" : 6,
       "termWeight" : {
-        "Salt" : 926,
-        "Egg_yolk" : 10428,
-        "Butter" : 2896,
-        "Cream" : 3476,
-        "Sugar" : 5793,
-        "Banana" : 76477
+        "Salt" : 40,
+        "Egg_yolk" : 450,
+        "Butter" : 125,
+        "Cream" : 150,
+        "Sugar" : 250,
+        "Banana" : 3300
       }
     },
     "Banana_juice" : {
       "entityName" : "Banana_juice",
-      "sumOfTermWeights" : 99999,
+      "sumOfTermWeights" : 1204,
       "termStrength" : 2,
       "termWeight" : {
-        "Sugar" : 332,
-        "Banana" : 99667
+        "Sugar" : 4,
+        "Banana" : 1200
       }
     },
     "Green_pea_mesh" : {
       "entityName" : "Green_pea_mesh",
-      "sumOfTermWeights" : 99995,
+      "sumOfTermWeights" : 253,
       "termStrength" : 9,
       "termWeight" : {
-        "Salt" : 790,
-        "Black_pepper" : 395,
-        "Peas" : 79051,
-        "Oil" : 3952,
-        "Butter" : 11857,
-        "Tarragon" : 395,
-        "Parsley" : 1185,
-        "Lemon" : 1185,
-        "Chives" : 1185
+        "Salt" : 2,
+        "Black_pepper" : 1,
+        "Peas" : 200,
+        "Oil" : 10,
+        "Butter" : 30,
+        "Tarragon" : 1,
+        "Parsley" : 3,
+        "Lemon" : 3,
+        "Chives" : 3
       }
     },
     "Custard" : {
       "entityName" : "Custard",
-      "sumOfTermWeights" : 99997,
+      "sumOfTermWeights" : 1285,
       "termStrength" : 7,
       "termWeight" : {
-        "Salt" : 389,
-        "Milk_powder" : 3501,
-        "Egg_yolk" : 15564,
-        "Cream" : 11673,
-        "Vanilla_extract" : 778,
-        "Sugar" : 17509,
-        "Milk" : 50583
+        "Salt" : 5,
+        "Milk_powder" : 45,
+        "Egg_yolk" : 200,
+        "Cream" : 150,
+        "Vanilla_extract" : 10,
+        "Sugar" : 225,
+        "Milk" : 650
       }
     },
     "Chocolate_mustard_gravy" : {
       "entityName" : "Chocolate_mustard_gravy",
-      "sumOfTermWeights" : 99993,
+      "sumOfTermWeights" : 16705,
       "termStrength" : 17,
       "termWeight" : {
-        "Black_pepper" : 239,
-        "Carrot" : 5986,
-        "Onion" : 5986,
-        "Mushrooms" : 5986,
-        "Butter" : 2394,
-        "Chocolate" : 5986,
-        "Tomato" : 2394,
-        "Thyme" : 119,
-        "All-purpose_flour" : 718,
-        "Potato" : 14965,
-        "Salt" : 897,
-        "Bay_leaf" : 29,
-        "Oil" : 2993,
-        "Parsley" : 419,
-        "Beef" : 44896,
-        "Leek" : 2993,
-        "Mustard" : 2993
+        "Black_pepper" : 40,
+        "Carrot" : 1000,
+        "Onion" : 1000,
+        "Mushrooms" : 1000,
+        "Butter" : 400,
+        "Chocolate" : 1000,
+        "Tomato" : 400,
+        "Thyme" : 20,
+        "All-purpose_flour" : 120,
+        "Potato" : 2500,
+        "Salt" : 150,
+        "Bay_leaf" : 5,
+        "Oil" : 500,
+        "Parsley" : 70,
+        "Beef" : 7500,
+        "Leek" : 500,
+        "Mustard" : 500
       }
     },
     "Nacho_cheese" : {
       "entityName" : "Nacho_cheese",
-      "sumOfTermWeights" : 99998,
+      "sumOfTermWeights" : 668,
       "termStrength" : 6,
       "termWeight" : {
-        "Salt" : 598,
-        "Sodium_hexametaphosphate" : 299,
-        "Sodium_citrate" : 1796,
-        "Cheddar" : 44910,
-        "Jalapenos" : 7485,
-        "Milk" : 44910
+        "Salt" : 4,
+        "Sodium_hexametaphosphate" : 2,
+        "Sodium_citrate" : 12,
+        "Cheddar" : 300,
+        "Jalapenos" : 50,
+        "Milk" : 300
       }
     },
     "Creamy_coleslaw" : {
       "entityName" : "Creamy_coleslaw",
-      "sumOfTermWeights" : 99995,
+      "sumOfTermWeights" : 544,
       "termStrength" : 10,
       "termWeight" : {
-        "Salt" : 551,
-        "Black_pepper" : 183,
-        "Carrot" : 9558,
-        "Onion" : 16544,
-        "Celery_seed" : 2757,
-        "Raisins" : 8272,
-        "Horseradish" : 2389,
-        "Cabbage" : 36764,
-        "Vinegar" : 4595,
-        "Mayo" : 18382
+        "Salt" : 3,
+        "Black_pepper" : 1,
+        "Carrot" : 52,
+        "Onion" : 90,
+        "Celery_seed" : 15,
+        "Raisins" : 45,
+        "Horseradish" : 13,
+        "Cabbage" : 200,
+        "Vinegar" : 25,
+        "Mayo" : 100
       }
     },
     "Strawberry_crush" : {
       "entityName" : "Strawberry_crush",
-      "sumOfTermWeights" : 99999,
+      "sumOfTermWeights" : 310,
       "termStrength" : 3,
       "termWeight" : {
-        "Malic_acid" : 3225,
-        "Strawberries" : 64516,
-        "Sugar" : 32258
+        "Malic_acid" : 10,
+        "Strawberries" : 200,
+        "Sugar" : 100
       }
     },
     "Vanilla_ice-cream" : {
       "entityName" : "Vanilla_ice-cream",
-      "sumOfTermWeights" : 99996,
+      "sumOfTermWeights" : 937,
       "termStrength" : 7,
       "termWeight" : {
-        "Milk_powder" : 5336,
-        "Locust_bean_gum" : 106,
-        "Cream" : 17609,
-        "Xanthan_gum" : 106,
-        "Vanilla_extract" : 5336,
-        "Sugar" : 12806,
-        "Milk" : 58697
+        "Milk_powder" : 50,
+        "Locust_bean_gum" : 1,
+        "Cream" : 165,
+        "Xanthan_gum" : 1,
+        "Vanilla_extract" : 50,
+        "Sugar" : 120,
+        "Milk" : 550
       }
     }
   },
@@ -525,7 +525,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 8,
-      "sumOfTermWeights" : 101494
+      "sumOfTermWeights" : 79
     },
     "Nutmeg" : {
       "termName" : "Nutmeg",
@@ -566,7 +566,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 110
+      "sumOfTermWeights" : 12
     },
     "Celery_leaf" : {
       "termName" : "Celery_leaf",
@@ -607,7 +607,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 1697
+      "sumOfTermWeights" : 20
     },
     "Locust_bean_gum" : {
       "termName" : "Locust_bean_gum",
@@ -648,7 +648,7 @@
         "Vanilla_ice-cream" : true
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 106
+      "sumOfTermWeights" : 1
     },
     "Cream" : {
       "termName" : "Cream",
@@ -689,7 +689,7 @@
         "Vanilla_ice-cream" : true
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 89909
+      "sumOfTermWeights" : 2915
     },
     "Cornichons" : {
       "termName" : "Cornichons",
@@ -730,7 +730,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 9529
+      "sumOfTermWeights" : 75
     },
     "Worcestershire_sauce" : {
       "termName" : "Worcestershire_sauce",
@@ -771,7 +771,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 1348
+      "sumOfTermWeights" : 12
     },
     "Tarragon" : {
       "termName" : "Tarragon",
@@ -812,7 +812,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 395
+      "sumOfTermWeights" : 1
     },
     "Tomato" : {
       "termName" : "Tomato",
@@ -853,7 +853,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 3,
-      "sumOfTermWeights" : 88396
+      "sumOfTermWeights" : 1780
     },
     "Bacon" : {
       "termName" : "Bacon",
@@ -894,7 +894,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 26966
+      "sumOfTermWeights" : 240
     },
     "Vinegar" : {
       "termName" : "Vinegar",
@@ -935,7 +935,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 34002
+      "sumOfTermWeights" : 179
     },
     "Xanthan_gum" : {
       "termName" : "Xanthan_gum",
@@ -976,7 +976,7 @@
         "Vanilla_ice-cream" : true
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 106
+      "sumOfTermWeights" : 1
     },
     "Vanilla_extract" : {
       "termName" : "Vanilla_extract",
@@ -1017,7 +1017,7 @@
         "Vanilla_ice-cream" : true
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 9527
+      "sumOfTermWeights" : 235
     },
     "Canola_oil" : {
       "termName" : "Canola_oil",
@@ -1058,7 +1058,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 8673
+      "sumOfTermWeights" : 340
     },
     "Lemon" : {
       "termName" : "Lemon",
@@ -1099,7 +1099,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 4,
-      "sumOfTermWeights" : 14135
+      "sumOfTermWeights" : 78
     },
     "Eggs" : {
       "termName" : "Eggs",
@@ -1140,7 +1140,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 6944
+      "sumOfTermWeights" : 100
     },
     "Potato" : {
       "termName" : "Potato",
@@ -1181,7 +1181,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 4,
-      "sumOfTermWeights" : 226089
+      "sumOfTermWeights" : 15800
     },
     "Baking_powder" : {
       "termName" : "Baking_powder",
@@ -1222,7 +1222,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 4,
-      "sumOfTermWeights" : 4097
+      "sumOfTermWeights" : 60
     },
     "Paprika" : {
       "termName" : "Paprika",
@@ -1263,7 +1263,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 466
+      "sumOfTermWeights" : 25
     },
     "Celery" : {
       "termName" : "Celery",
@@ -1304,7 +1304,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 13993
+      "sumOfTermWeights" : 140
     },
     "Gelatin" : {
       "termName" : "Gelatin",
@@ -1345,7 +1345,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 2123
+      "sumOfTermWeights" : 300
     },
     "Citrus_Oil" : {
       "termName" : "Citrus_Oil",
@@ -1386,7 +1386,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 424
+      "sumOfTermWeights" : 60
     },
     "Strawberry" : {
       "termName" : "Strawberry",
@@ -1427,7 +1427,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 77700
+      "sumOfTermWeights" : 1000
     },
     "Cake_flour" : {
       "termName" : "Cake_flour",
@@ -1468,7 +1468,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 10714
+      "sumOfTermWeights" : 420
     },
     "Cinnamon" : {
       "termName" : "Cinnamon",
@@ -1509,7 +1509,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 435
+      "sumOfTermWeights" : 70
     },
     "Milk" : {
       "termName" : "Milk",
@@ -1550,7 +1550,7 @@
         "Vanilla_ice-cream" : true
       },
       "entityExistenceStrength" : 7,
-      "sumOfTermWeights" : 278224
+      "sumOfTermWeights" : 10660
     },
     "Chives" : {
       "termName" : "Chives",
@@ -1591,7 +1591,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 9733
+      "sumOfTermWeights" : 51
     },
     "Cocoa_powder" : {
       "termName" : "Cocoa_powder",
@@ -1632,7 +1632,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 7142
+      "sumOfTermWeights" : 280
     },
     "Peas" : {
       "termName" : "Peas",
@@ -1673,7 +1673,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 79051
+      "sumOfTermWeights" : 200
     },
     "Gum_arabic" : {
       "termName" : "Gum_arabic",
@@ -1714,7 +1714,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 247
+      "sumOfTermWeights" : 35
     },
     "Molasses" : {
       "termName" : "Molasses",
@@ -1755,7 +1755,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 4494
+      "sumOfTermWeights" : 40
     },
     "Onion" : {
       "termName" : "Onion",
@@ -1796,7 +1796,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 8,
-      "sumOfTermWeights" : 93198
+      "sumOfTermWeights" : 1760
     },
     "Mushrooms" : {
       "termName" : "Mushrooms",
@@ -1837,7 +1837,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 5986
+      "sumOfTermWeights" : 1000
     },
     "Egg_yolk" : {
       "termName" : "Egg_yolk",
@@ -1878,7 +1878,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 69896
+      "sumOfTermWeights" : 2025
     },
     "Mint" : {
       "termName" : "Mint",
@@ -1919,7 +1919,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 1156
+      "sumOfTermWeights" : 10
     },
     "Hazelnuts" : {
       "termName" : "Hazelnuts",
@@ -1960,7 +1960,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 8474
+      "sumOfTermWeights" : 25
     },
     "Jalapenos" : {
       "termName" : "Jalapenos",
@@ -2001,7 +2001,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 7485
+      "sumOfTermWeights" : 50
     },
     "Banana" : {
       "termName" : "Banana",
@@ -2042,7 +2042,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 176144
+      "sumOfTermWeights" : 4500
     },
     "Glucose_syrup" : {
       "termName" : "Glucose_syrup",
@@ -2083,7 +2083,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 42477
+      "sumOfTermWeights" : 6000
     },
     "Honey" : {
       "termName" : "Honey",
@@ -2124,7 +2124,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 27821
+      "sumOfTermWeights" : 175
     },
     "Cream_cheese" : {
       "termName" : "Cream_cheese",
@@ -2165,7 +2165,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 6969
+      "sumOfTermWeights" : 1120
     },
     "Mace" : {
       "termName" : "Mace",
@@ -2206,7 +2206,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 62
+      "sumOfTermWeights" : 10
     },
     "Strawberries" : {
       "termName" : "Strawberries",
@@ -2247,7 +2247,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 138590
+      "sumOfTermWeights" : 400
     },
     "Bay_leaf" : {
       "termName" : "Bay_leaf",
@@ -2288,7 +2288,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 29
+      "sumOfTermWeights" : 5
     },
     "Sodium_hexametaphosphate" : {
       "termName" : "Sodium_hexametaphosphate",
@@ -2329,7 +2329,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 462
+      "sumOfTermWeights" : 3
     },
     "Almond" : {
       "termName" : "Almond",
@@ -2370,7 +2370,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 36
+      "sumOfTermWeights" : 4
     },
     "Oil" : {
       "termName" : "Oil",
@@ -2411,7 +2411,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 7,
-      "sumOfTermWeights" : 143848
+      "sumOfTermWeights" : 3310
     },
     "Sodium_citrate" : {
       "termName" : "Sodium_citrate",
@@ -2452,7 +2452,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 3264
+      "sumOfTermWeights" : 21
     },
     "Citric_acid" : {
       "termName" : "Citric_acid",
@@ -2493,7 +2493,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 1274
+      "sumOfTermWeights" : 180
     },
     "Parsley" : {
       "termName" : "Parsley",
@@ -2534,7 +2534,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 1604
+      "sumOfTermWeights" : 73
     },
     "Chicken" : {
       "termName" : "Chicken",
@@ -2575,7 +2575,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 106976
+      "sumOfTermWeights" : 2200
     },
     "Cucumber" : {
       "termName" : "Cucumber",
@@ -2616,7 +2616,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 10186
+      "sumOfTermWeights" : 120
     },
     "Malic_acid" : {
       "termName" : "Malic_acid",
@@ -2657,7 +2657,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 4157
+      "sumOfTermWeights" : 22
     },
     "Carrot" : {
       "termName" : "Carrot",
@@ -2698,7 +2698,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 147401
+      "sumOfTermWeights" : 9712
     },
     "Cheddar" : {
       "termName" : "Cheddar",
@@ -2739,7 +2739,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 59102
+      "sumOfTermWeights" : 387
     },
     "Shortening" : {
       "termName" : "Shortening",
@@ -2780,7 +2780,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 9203
+      "sumOfTermWeights" : 1300
     },
     "Chaat_masala" : {
       "termName" : "Chaat_masala",
@@ -2821,7 +2821,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 1156
+      "sumOfTermWeights" : 10
     },
     "Cheese" : {
       "termName" : "Cheese",
@@ -2862,7 +2862,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 13559
+      "sumOfTermWeights" : 40
     },
     "Cilantro" : {
       "termName" : "Cilantro",
@@ -2903,7 +2903,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 1734
+      "sumOfTermWeights" : 15
     },
     "All-purpose_flour" : {
       "termName" : "All-purpose_flour",
@@ -2944,7 +2944,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 6,
-      "sumOfTermWeights" : 166241
+      "sumOfTermWeights" : 2785
     },
     "Salt" : {
       "termName" : "Salt",
@@ -2985,7 +2985,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 25,
-      "sumOfTermWeights" : 26236
+      "sumOfTermWeights" : 641
     },
     "Clove" : {
       "termName" : "Clove",
@@ -3026,7 +3026,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 73
+      "sumOfTermWeights" : 8
     },
     "Raisins" : {
       "termName" : "Raisins",
@@ -3067,7 +3067,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 10449
+      "sumOfTermWeights" : 395
     },
     "Basil" : {
       "termName" : "Basil",
@@ -3108,7 +3108,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 3,
-      "sumOfTermWeights" : 46549
+      "sumOfTermWeights" : 370
     },
     "Brown_sugar" : {
       "termName" : "Brown_sugar",
@@ -3149,7 +3149,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 18382
+      "sumOfTermWeights" : 240
     },
     "Pickled_Onions" : {
       "termName" : "Pickled_Onions",
@@ -3190,7 +3190,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 12733
+      "sumOfTermWeights" : 150
     },
     "Emmenthal" : {
       "termName" : "Emmenthal",
@@ -3231,7 +3231,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 34747
+      "sumOfTermWeights" : 213
     },
     "Beef" : {
       "termName" : "Beef",
@@ -3272,7 +3272,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 44896
+      "sumOfTermWeights" : 7500
     },
     "Leek" : {
       "termName" : "Leek",
@@ -3313,7 +3313,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 2993
+      "sumOfTermWeights" : 500
     },
     "Cabbage" : {
       "termName" : "Cabbage",
@@ -3354,7 +3354,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 79136
+      "sumOfTermWeights" : 400
     },
     "Sugar" : {
       "termName" : "Sugar",
@@ -3395,7 +3395,7 @@
         "Vanilla_ice-cream" : true
       },
       "entityExistenceStrength" : 17,
-      "sumOfTermWeights" : 266290
+      "sumOfTermWeights" : 12578
     },
     "Green_cardamom" : {
       "termName" : "Green_cardamom",
@@ -3436,7 +3436,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 37
+      "sumOfTermWeights" : 6
     },
     "Buttermilk" : {
       "termName" : "Buttermilk",
@@ -3477,7 +3477,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 4,
-      "sumOfTermWeights" : 70473
+      "sumOfTermWeights" : 1290
     },
     "Radicchio" : {
       "termName" : "Radicchio",
@@ -3518,7 +3518,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 40677
+      "sumOfTermWeights" : 120
     },
     "Baking_soda" : {
       "termName" : "Baking_soda",
@@ -3559,7 +3559,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 1654
+      "sumOfTermWeights" : 76
     },
     "Egg" : {
       "termName" : "Egg",
@@ -3600,7 +3600,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 4,
-      "sumOfTermWeights" : 16816
+      "sumOfTermWeights" : 300
     },
     "Butter" : {
       "termName" : "Butter",
@@ -3641,7 +3641,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 12,
-      "sumOfTermWeights" : 201881
+      "sumOfTermWeights" : 3031
     },
     "Mushroom" : {
       "termName" : "Mushroom",
@@ -3682,7 +3682,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 18348
+      "sumOfTermWeights" : 100
     },
     "Horseradish" : {
       "termName" : "Horseradish",
@@ -3723,7 +3723,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 2389
+      "sumOfTermWeights" : 13
     },
     "Chocolate" : {
       "termName" : "Chocolate",
@@ -3764,7 +3764,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 26819
+      "sumOfTermWeights" : 1300
     },
     "Rum" : {
       "termName" : "Rum",
@@ -3805,7 +3805,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 9170
+      "sumOfTermWeights" : 1450
     },
     "Sour_cream" : {
       "termName" : "Sour_cream",
@@ -3846,7 +3846,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 27676
+      "sumOfTermWeights" : 380
     },
     "Thyme" : {
       "termName" : "Thyme",
@@ -3887,7 +3887,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 1953
+      "sumOfTermWeights" : 30
     },
     "Mayo" : {
       "termName" : "Mayo",
@@ -3928,7 +3928,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 4,
-      "sumOfTermWeights" : 106010
+      "sumOfTermWeights" : 875
     },
     "Greek_yogurt" : {
       "termName" : "Greek_yogurt",
@@ -3969,7 +3969,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 17341
+      "sumOfTermWeights" : 150
     },
     "Beans" : {
       "termName" : "Beans",
@@ -4010,7 +4010,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 1,
-      "sumOfTermWeights" : 22471
+      "sumOfTermWeights" : 200
     },
     "Milk_powder" : {
       "termName" : "Milk_powder",
@@ -4051,7 +4051,7 @@
         "Vanilla_ice-cream" : true
       },
       "entityExistenceStrength" : 2,
-      "sumOfTermWeights" : 8837
+      "sumOfTermWeights" : 95
     },
     "Celery_seed" : {
       "termName" : "Celery_seed",
@@ -4092,7 +4092,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 3,
-      "sumOfTermWeights" : 3222
+      "sumOfTermWeights" : 19
     },
     "Garlic" : {
       "termName" : "Garlic",
@@ -4133,7 +4133,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 3,
-      "sumOfTermWeights" : 3202
+      "sumOfTermWeights" : 74
     },
     "Mustard" : {
       "termName" : "Mustard",
@@ -4174,7 +4174,7 @@
         "Vanilla_ice-cream" : false
       },
       "entityExistenceStrength" : 5,
-      "sumOfTermWeights" : 21646
+      "sumOfTermWeights" : 670
     }
   },
   "entityList" : [ "Baked_beans", "Banana_custard", "Banana_juice", "Basil_oil", "Biscuit", "Buttermilk_biscuit", "Carrot_cake", "Carrot_salad", "Cheddar_cheese_sauce", "Chewy_candy", "Chicken_and_mushroom", "Chocolate-chip_cookie", "Chocolate_cake", "Chocolate_mustard_gravy", "Creamy_coleslaw", "Custard", "Donuts", "Eggnog", "Eggs_benedict", "French_fries", "Fried_chicken", "Green_pea_mesh", "Honey_butter", "Mustard_potato_salad", "Nacho_cheese", "Potato_salad", "Radicchio_salad", "Red_coleslaw", "Strawberry_broth", "Strawberry_crush", "Strawberry_juice", "Tartar_sauce", "Tomato_soup", "Vanilla_ice-cream" ],

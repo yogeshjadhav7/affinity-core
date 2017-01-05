@@ -11,7 +11,7 @@ public class AffinityAPI {
 	}
 	
 	
-	public static void startProcess(final Session session, final String inputFilePath) {
+	public static void startProcess(final Session session, final String inputFilePath) throws Exception {
 		session.startProcess(inputFilePath);
 	}
 	

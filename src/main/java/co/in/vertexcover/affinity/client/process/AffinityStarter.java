@@ -5,12 +5,12 @@ import co.in.vertexcover.affinity.client.dto.Affinity.PROCESS;
 
 public class AffinityStarter {
 
-	public static void start(final String inputFilePath, final Affinity affinity) {
+	public static void start(final String inputFilePath, final Affinity affinity) throws Exception {
 		start(inputFilePath, affinity, PROCESS.INPUT_PROCESSING);
 	}
 	
 	
-	public static void start(final String inputFilePath, final Affinity affinity, final PROCESS process) {
+	public static void start(final String inputFilePath, final Affinity affinity, final PROCESS process) throws Exception {
 		try {
 			
 			switch (process) {
@@ -28,7 +28,9 @@ public class AffinityStarter {
 				break;
 			}
 			
-		} catch(Exception e) { }
+		} catch(Exception e) { 
+			throw e;
+		}
 	}
 	
 	
@@ -38,14 +40,22 @@ public class AffinityStarter {
 				inputFilePath, 
 				OUTPUT_DIRECTORY_PATH);
 		final boolean inputValidationstatus = inputValidationProcess.process(affinity);
-		if(!inputValidationstatus)
-			throw new Exception("Input validation was unsuccessful");
+		if(!inputValidationstatus) {
+			if(inputValidationProcess.processException != null)
+				throw inputValidationProcess.processException;
+			else
+				throw new Exception("Input validation was unsuccessful");
+		}
 	
 		
 		Process inputProcessingProcess = new InputProcessing(affinity, OUTPUT_DIRECTORY_PATH);
 		final boolean inputProcessingStatus = inputProcessingProcess.process(affinity);
-		if(!inputProcessingStatus)
-			throw new Exception("Input processing was unsuccessful");
+		if(!inputProcessingStatus) {
+			if(inputProcessingProcess.processException != null)
+				throw inputProcessingProcess.processException;
+			else
+				throw new Exception("Input processing was unsuccessful");
+		}
 	}
 	
 	
@@ -54,8 +64,12 @@ public class AffinityStarter {
 		Process affinityCalculationProcess = new AffinityCalculation(affinity, OUTPUT_DIRECTORY_PATH);
 		
 		final boolean affinityCalculationStatus = affinityCalculationProcess.process(affinity);
-		if(!affinityCalculationStatus)
-			throw new Exception("Affinity calculation was unsuccessful");
+		if(!affinityCalculationStatus) {
+			if(affinityCalculationProcess.processException != null)
+				throw affinityCalculationProcess.processException;
+			else
+				throw new Exception("Affinity calculation was unsuccessful");
+		}
 	}
 	
 	
@@ -64,7 +78,11 @@ public class AffinityStarter {
 		Process termBondCalculationProcess = new TermBondCalculation(affinity, OUTPUT_DIRECTORY_PATH);
 		
 		final boolean termBondCalculationStatus = termBondCalculationProcess.process(affinity);
-		if(!termBondCalculationStatus)
-			throw new Exception("Term bond calculation was unsuccessful");
+		if(!termBondCalculationStatus) {
+			if(termBondCalculationProcess.processException != null)
+				throw termBondCalculationProcess.processException;
+			else
+				throw new Exception("Term bond calculation was unsuccessful");
+		}
 	}
 }
