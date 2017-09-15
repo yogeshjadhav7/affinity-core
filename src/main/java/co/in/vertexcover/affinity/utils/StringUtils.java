@@ -1,11 +1,14 @@
 package co.in.vertexcover.affinity.utils;
 
 import java.io.File;
+import java.text.DecimalFormat;
 
 import co.in.vertexcover.affinity.client.constants.StringConstants;
 
+
 public class StringUtils {
 
+	final private static DecimalFormat decimalFormatter = new DecimalFormat("#.00");
 	final private static String pseudoString = "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM";
 	
 	public static String createAffinityId(final String... elements) {
@@ -39,5 +42,11 @@ public class StringUtils {
     			+ affinityId
     			+ File.separator;
     } 
+    
+    public static double formatDecimalValue(double value) {
+    	final String formattedValueString = decimalFormatter.format(value);
+    	return Double.parseDouble(formattedValueString);
+    }
+    
 	
 }

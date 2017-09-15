@@ -12,9 +12,7 @@ public class AffinityCalculation extends Process {
 	final static public String PROCESS_NAME = "AFFINITY_CALCULATION";
 	private MdsData mdsData;
 	
-	public AffinityCalculation() {
-		// TODO Auto-generated constructor stub
-	}
+	public AffinityCalculation() {}
 	
 	public AffinityCalculation(final Affinity affinity, final String outputDirectoryPath) throws Exception {
 		super(PROCESS_NAME, outputDirectoryPath 
@@ -34,7 +32,8 @@ public class AffinityCalculation extends Process {
     		System.out.println("Processing for term " + term);
     		SvmTermData svmTermData = new AffinityCalculationProcessor(affinity.getConfigurations().getSCALE_LENGTH(), 
     				term, 
-    				mdsData).process();
+    				mdsData,
+    				affinity.getConfigurations().isDoClassification()).process();
     		((AffinityCalculationData) this.processData).addToData(svmTermData);
     		this.postProcess(affinity);
     	}

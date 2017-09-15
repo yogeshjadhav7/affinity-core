@@ -1,0 +1,617 @@
+{
+  "configurations" : {
+    "doClassification" : true,
+    "term_BOND_SCALE_LENGTH" : 100,
+    "mds_DIMENSIONS_REDUCTION_FACTOR" : 1.0,
+    "scale_LENGTH" : 100,
+    "mds_DIMENSIONS" : 4,
+    "term_OVERLAPPING_RATIO" : 0.7,
+    "min_TERM_OCCURENCE_PERCENTAGE" : 0.0,
+    "root_PATH" : "/Users/yogesh/Tensorflow/affinity-core/affinity-session-data/Led7_SVM-777/",
+    "max_MDS_DIMENSIONS" : 50,
+    "min_TERM_OCCURENCE_PERCENTAGE_DEFAULT" : 0.0
+  },
+  "processes" : {
+    "INPUT_VALIDATION" : {
+      "processName" : "INPUT_VALIDATION",
+      "processException" : null,
+      "processCompleted" : true,
+      "processCompletedAt" : 1505487172854,
+      "processStartedAt" : 1505487172402,
+      "processInProgress" : true,
+      "outputFile" : "/Users/yogesh/Tensorflow/affinity-core/affinity-session-data/Led7_SVM-777/INPUT_VALIDATION.txt",
+      "processData" : {
+        "entityData" : {
+          "Zero" : {
+            "entityName" : "Zero",
+            "sumOfTermWeights" : 600,
+            "termStrength" : 6,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "E" : 100,
+              "F" : 100
+            }
+          },
+          "Eight" : {
+            "entityName" : "Eight",
+            "sumOfTermWeights" : 700,
+            "termStrength" : 7,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "E" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Five" : {
+            "entityName" : "Five",
+            "sumOfTermWeights" : 500,
+            "termStrength" : 5,
+            "termWeight" : {
+              "A" : 100,
+              "C" : 100,
+              "D" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Six" : {
+            "entityName" : "Six",
+            "sumOfTermWeights" : 600,
+            "termStrength" : 6,
+            "termWeight" : {
+              "A" : 100,
+              "C" : 100,
+              "D" : 100,
+              "E" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "One" : {
+            "entityName" : "One",
+            "sumOfTermWeights" : 200,
+            "termStrength" : 2,
+            "termWeight" : {
+              "B" : 100,
+              "C" : 100
+            }
+          },
+          "Four" : {
+            "entityName" : "Four",
+            "sumOfTermWeights" : 400,
+            "termStrength" : 4,
+            "termWeight" : {
+              "B" : 100,
+              "C" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Nine" : {
+            "entityName" : "Nine",
+            "sumOfTermWeights" : 600,
+            "termStrength" : 6,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Seven" : {
+            "entityName" : "Seven",
+            "sumOfTermWeights" : 300,
+            "termStrength" : 3,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100
+            }
+          },
+          "Two" : {
+            "entityName" : "Two",
+            "sumOfTermWeights" : 500,
+            "termStrength" : 5,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "D" : 100,
+              "E" : 100,
+              "G" : 100
+            }
+          },
+          "Three" : {
+            "entityName" : "Three",
+            "sumOfTermWeights" : 500,
+            "termStrength" : 5,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "G" : 100
+            }
+          }
+        },
+        "termData" : {
+          "A" : {
+            "termName" : "A",
+            "entityExistence" : {
+              "Zero" : true,
+              "Eight" : true,
+              "Five" : true,
+              "Six" : true,
+              "One" : false,
+              "Four" : false,
+              "Nine" : true,
+              "Seven" : true,
+              "Two" : true,
+              "Three" : true
+            },
+            "entityExistenceStrength" : 8,
+            "sumOfTermWeights" : 800
+          },
+          "B" : {
+            "termName" : "B",
+            "entityExistence" : {
+              "Zero" : true,
+              "Eight" : true,
+              "Five" : false,
+              "Six" : false,
+              "One" : true,
+              "Four" : true,
+              "Nine" : true,
+              "Seven" : true,
+              "Two" : true,
+              "Three" : true
+            },
+            "entityExistenceStrength" : 8,
+            "sumOfTermWeights" : 800
+          },
+          "C" : {
+            "termName" : "C",
+            "entityExistence" : {
+              "Zero" : true,
+              "Eight" : true,
+              "Five" : true,
+              "Six" : true,
+              "One" : true,
+              "Four" : true,
+              "Nine" : true,
+              "Seven" : true,
+              "Two" : false,
+              "Three" : true
+            },
+            "entityExistenceStrength" : 9,
+            "sumOfTermWeights" : 900
+          },
+          "D" : {
+            "termName" : "D",
+            "entityExistence" : {
+              "Zero" : true,
+              "Eight" : true,
+              "Five" : true,
+              "Six" : true,
+              "One" : false,
+              "Four" : false,
+              "Nine" : true,
+              "Seven" : false,
+              "Two" : true,
+              "Three" : true
+            },
+            "entityExistenceStrength" : 7,
+            "sumOfTermWeights" : 700
+          },
+          "E" : {
+            "termName" : "E",
+            "entityExistence" : {
+              "Zero" : true,
+              "Eight" : true,
+              "Five" : false,
+              "Six" : true,
+              "One" : false,
+              "Four" : false,
+              "Nine" : false,
+              "Seven" : false,
+              "Two" : true,
+              "Three" : false
+            },
+            "entityExistenceStrength" : 4,
+            "sumOfTermWeights" : 400
+          },
+          "F" : {
+            "termName" : "F",
+            "entityExistence" : {
+              "Zero" : true,
+              "Eight" : true,
+              "Five" : true,
+              "Six" : true,
+              "One" : false,
+              "Four" : true,
+              "Nine" : true,
+              "Seven" : false,
+              "Two" : false,
+              "Three" : false
+            },
+            "entityExistenceStrength" : 6,
+            "sumOfTermWeights" : 600
+          },
+          "G" : {
+            "termName" : "G",
+            "entityExistence" : {
+              "Zero" : false,
+              "Eight" : true,
+              "Five" : true,
+              "Six" : true,
+              "One" : false,
+              "Four" : true,
+              "Nine" : true,
+              "Seven" : false,
+              "Two" : true,
+              "Three" : true
+            },
+            "entityExistenceStrength" : 7,
+            "sumOfTermWeights" : 700
+          }
+        },
+        "entityList" : [ "Eight", "Five", "Four", "Nine", "One", "Seven", "Six", "Three", "Two", "Zero" ],
+        "termList" : [ "A", "B", "C", "D", "E", "F", "G" ],
+        "termDistributionRatio" : 0.7
+      }
+    },
+    "INPUT_PROCESSING" : {
+      "processName" : "INPUT_PROCESSING",
+      "processException" : null,
+      "processCompleted" : true,
+      "processCompletedAt" : 1505487172904,
+      "processStartedAt" : 1505487172885,
+      "processInProgress" : true,
+      "outputFile" : "/Users/yogesh/Tensorflow/affinity-core/affinity-session-data/Led7_SVM-777/INPUT_PROCESSING.txt",
+      "processData" : {
+        "mdsDimensions" : 4,
+        "mdsMatrix" : [ [ -0.5621335606676066, -0.10341472115349772, -0.055546817729755345, 0.039347753221496626 ], [ 0.05241949355511193, 0.5107218588646799, 0.09733288509879674, -0.04403202666230059 ], [ 0.1943169543242961, 0.3007730145083036, -0.214627367706839, 0.16208112005824674 ], [ -0.011738479826923784, 0.5630807545964168, -0.04516023509798893, 0.06098874433686677 ], [ 0.4023861558021472, -0.3054802496745218, -0.13302399409170532, 0.19078166638363536 ], [ 0.40103474545637646, -0.2611075360909219, 0.09292374522244862, -0.141653734099493 ], [ -0.4948307545858641, 0.08540486720894298, 0.033255911305930065, 0.09805772901379818 ], [ 0.25188185041513367, 0.19515098373912357, 0.4262991465879277, 0.1659060524875232 ], [ -0.35817919971774687, -0.08284324981096267, 0.3029050727274289, 0.14579218399245403 ], [ -0.5137636390009326, 0.01464132845829487, -0.01441319626444091, 0.0235830026035862 ] ],
+        "entityList" : [ "Eight", "Five", "Four", "Nine", "One", "Seven", "Six", "Three", "Two", "Zero" ],
+        "termList" : [ "A", "B", "C", "D", "E", "F", "G" ],
+        "entityData" : {
+          "Zero" : {
+            "entityName" : "Zero",
+            "sumOfTermWeights" : 600,
+            "termStrength" : 6,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "E" : 100,
+              "F" : 100
+            }
+          },
+          "Eight" : {
+            "entityName" : "Eight",
+            "sumOfTermWeights" : 700,
+            "termStrength" : 7,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "E" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Five" : {
+            "entityName" : "Five",
+            "sumOfTermWeights" : 500,
+            "termStrength" : 5,
+            "termWeight" : {
+              "A" : 100,
+              "C" : 100,
+              "D" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Six" : {
+            "entityName" : "Six",
+            "sumOfTermWeights" : 600,
+            "termStrength" : 6,
+            "termWeight" : {
+              "A" : 100,
+              "C" : 100,
+              "D" : 100,
+              "E" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "One" : {
+            "entityName" : "One",
+            "sumOfTermWeights" : 200,
+            "termStrength" : 2,
+            "termWeight" : {
+              "B" : 100,
+              "C" : 100
+            }
+          },
+          "Four" : {
+            "entityName" : "Four",
+            "sumOfTermWeights" : 400,
+            "termStrength" : 4,
+            "termWeight" : {
+              "B" : 100,
+              "C" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Nine" : {
+            "entityName" : "Nine",
+            "sumOfTermWeights" : 600,
+            "termStrength" : 6,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "F" : 100,
+              "G" : 100
+            }
+          },
+          "Seven" : {
+            "entityName" : "Seven",
+            "sumOfTermWeights" : 300,
+            "termStrength" : 3,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100
+            }
+          },
+          "Two" : {
+            "entityName" : "Two",
+            "sumOfTermWeights" : 500,
+            "termStrength" : 5,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "D" : 100,
+              "E" : 100,
+              "G" : 100
+            }
+          },
+          "Three" : {
+            "entityName" : "Three",
+            "sumOfTermWeights" : 500,
+            "termStrength" : 5,
+            "termWeight" : {
+              "A" : 100,
+              "B" : 100,
+              "C" : 100,
+              "D" : 100,
+              "G" : 100
+            }
+          }
+        }
+      }
+    },
+    "AFFINITY_CALCULATION" : {
+      "processName" : "AFFINITY_CALCULATION",
+      "processException" : null,
+      "processCompleted" : true,
+      "processCompletedAt" : 1505487188211,
+      "processStartedAt" : 1505487172932,
+      "processInProgress" : true,
+      "outputFile" : "/Users/yogesh/Tensorflow/affinity-core/affinity-session-data/Led7_SVM-777/AFFINITY_CALCULATION.txt",
+      "processData" : {
+        "data" : {
+          "A" : {
+            "term" : "A",
+            "kappaScore" : 0.0,
+            "entityAffinity" : {
+              "Five" : 13.93,
+              "Two" : 13.27,
+              "Zero" : 12.77,
+              "Six" : 12.72,
+              "Eight" : 11.66,
+              "Three" : 11.66,
+              "Nine" : 11.66,
+              "Seven" : 7.38,
+              "Four" : 4.96,
+              "One" : 0.0
+            },
+            "coordinatesOfW" : [ -0.06437235268213895, 0.05506024682151913, 0.10299481296626417, -0.1079869909814497 ]
+          },
+          "B" : {
+            "term" : "B",
+            "kappaScore" : 0.0,
+            "entityAffinity" : {
+              "One" : 28.91,
+              "Four" : 18.54,
+              "Seven" : 12.02,
+              "Eight" : 9.13,
+              "Six" : 6.95,
+              "Zero" : 6.4,
+              "Two" : 6.4,
+              "Three" : 6.4,
+              "Nine" : 5.28,
+              "Five" : 0.0
+            },
+            "coordinatesOfW" : [ 0.006220897876897932, -0.00907066688567636, -0.01361147712361726, 0.020187067722094106 ]
+          },
+          "C" : {
+            "term" : "C",
+            "kappaScore" : 0.0,
+            "entityAffinity" : {
+              "Four" : 19.07,
+              "Nine" : 16.83,
+              "Five" : 14.79,
+              "One" : 13.56,
+              "Seven" : 11.63,
+              "Zero" : 6.6,
+              "Six" : 5.99,
+              "Eight" : 5.76,
+              "Three" : 5.76,
+              "Two" : 0.0
+            },
+            "coordinatesOfW" : [ 0.009751596334953296, 0.0096028366137899, -0.020641415263351153, -0.006787747684601473 ]
+          },
+          "D" : {
+            "term" : "D",
+            "kappaScore" : 0.0,
+            "entityAffinity" : {
+              "Six" : 14.57,
+              "Zero" : 13.85,
+              "Two" : 13.36,
+              "Eight" : 13.04,
+              "Nine" : 13.04,
+              "Five" : 12.87,
+              "Three" : 9.97,
+              "Four" : 7.21,
+              "Seven" : 2.09,
+              "One" : 0.0
+            },
+            "coordinatesOfW" : [ -0.5046827764285364, 0.41258497758893414, 0.3104075760194476, -0.02010912750423379 ]
+          },
+          "E" : {
+            "term" : "E",
+            "kappaScore" : 1.0,
+            "entityAffinity" : {
+              "Eight" : 24.74,
+              "Zero" : 22.23,
+              "Six" : 21.16,
+              "Two" : 20.66,
+              "Nine" : 2.74,
+              "Five" : 2.12,
+              "Three" : 2.12,
+              "One" : 2.12,
+              "Seven" : 2.12,
+              "Four" : 0.0
+            },
+            "coordinatesOfW" : [ -2.5643270208972475, -1.1731756979809542, 0.3645729155904178, 0.10162243567721961 ]
+          },
+          "F" : {
+            "term" : "F",
+            "kappaScore" : 0.5454545454545455,
+            "entityAffinity" : {
+              "Six" : 15.53,
+              "Nine" : 15.46,
+              "Zero" : 15.46,
+              "Eight" : 15.04,
+              "Five" : 13.08,
+              "Four" : 11.01,
+              "Two" : 9.67,
+              "Three" : 4.01,
+              "One" : 0.74,
+              "Seven" : 0.0
+            },
+            "coordinatesOfW" : [ -0.9569348708746193, 0.8508572933962518, -0.5879497512916693, -0.11538315305983231 ]
+          },
+          "G" : {
+            "term" : "G",
+            "kappaScore" : 0.0,
+            "entityAffinity" : {
+              "Nine" : 16.51,
+              "Five" : 15.15,
+              "Six" : 13.38,
+              "Zero" : 11.91,
+              "Three" : 10.84,
+              "Two" : 10.84,
+              "Four" : 10.77,
+              "Eight" : 10.41,
+              "One" : 0.19,
+              "Seven" : 0.0
+            },
+            "coordinatesOfW" : [ -0.20026649785538883, 0.3927178802566938, 0.0849254403265668, 0.12539564669816716 ]
+          }
+        }
+      }
+    },
+    "TERM_BOND_CALCULATION" : {
+      "processName" : "TERM_BOND_CALCULATION",
+      "processException" : null,
+      "processCompleted" : true,
+      "processCompletedAt" : 1505487188251,
+      "processStartedAt" : 1505487188244,
+      "processInProgress" : true,
+      "outputFile" : "/Users/yogesh/Tensorflow/affinity-core/affinity-session-data/Led7_SVM-777/TERM_BOND_CALCULATION.txt",
+      "processData" : {
+        "bondStrengths" : {
+          "A" : {
+            "A" : 100.0,
+            "B" : 100.0,
+            "C" : 34.63382616244398,
+            "D" : 73.74009992587236,
+            "E" : 26.61912931533804,
+            "F" : 25.448153660775407,
+            "G" : 38.00914356805049
+          },
+          "B" : {
+            "A" : 100.0,
+            "B" : 100.0,
+            "C" : 17.51799487536741,
+            "D" : 61.02963387791748,
+            "E" : 11.063877677745458,
+            "F" : 21.65824381886502,
+            "G" : 28.19577052756529
+          },
+          "C" : {
+            "A" : 34.63382616244398,
+            "B" : 17.51799487536741,
+            "C" : 100.0,
+            "D" : 39.874008332997896,
+            "E" : 62.28165731137303,
+            "F" : 33.12960783074465,
+            "G" : 6.71554526503494
+          },
+          "D" : {
+            "A" : 73.74009992587236,
+            "B" : 61.02963387791748,
+            "C" : 39.874008332997896,
+            "D" : 100.0,
+            "E" : 45.85561909559253,
+            "F" : 65.4955924353181,
+            "G" : 87.18061782169416
+          },
+          "E" : {
+            "A" : 26.61912931533804,
+            "B" : 11.063877677745458,
+            "C" : 62.28165731137303,
+            "D" : 45.85561909559253,
+            "E" : 100.0,
+            "F" : 31.268908106835607,
+            "G" : 7.444939662367327
+          },
+          "F" : {
+            "A" : 25.448153660775407,
+            "B" : 21.65824381886502,
+            "C" : 33.12960783074465,
+            "D" : 65.4955924353181,
+            "E" : 31.268908106835607,
+            "F" : 100.0,
+            "G" : 71.61907548272875
+          },
+          "G" : {
+            "A" : 38.00914356805049,
+            "B" : 28.19577052756529,
+            "C" : 6.71554526503494,
+            "D" : 87.18061782169416,
+            "E" : 7.444939662367327,
+            "F" : 71.61907548272875,
+            "G" : 100.0
+          }
+        }
+      }
+    }
+  },
+  "id" : "Led7_SVM-777"
+}

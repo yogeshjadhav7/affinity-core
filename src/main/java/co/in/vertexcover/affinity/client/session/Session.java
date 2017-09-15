@@ -28,7 +28,7 @@ public class Session {
 	}
 	
 	public void startProcess(final String inputFilePath, final Configurations configurations) throws Exception {
-		this.affinity = new Affinity(StringUtils.createAffinityId(this.sessionName, this.sessionId));
+		this.affinity = new Affinity(StringUtils.createAffinityId(this.sessionName, this.sessionId), configurations);
 		AffinityStarter.start(inputFilePath, affinity);
 	}
 

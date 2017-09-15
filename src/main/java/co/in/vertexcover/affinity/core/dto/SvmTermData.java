@@ -8,8 +8,10 @@ import java.util.List;
 import java.util.Map;
 
 import co.in.vertexcover.affinity.client.process.ProcessData;
+import co.in.vertexcover.affinity.utils.StringUtils;
 
 public class SvmTermData extends ProcessData {
+	
 	
 	private String term;
 	private double kappaScore;
@@ -20,7 +22,7 @@ public class SvmTermData extends ProcessData {
 	public SvmTermData() {}
 	
 	public SvmTermData(final String term, final double[] affinityScore, final List<String> entityList, final double kappaScore,
-			final double[] cooredinatesOfW) {
+			final double[] cooredinatesOfW, final boolean doClassification) {
 		
 		this.term = term;
 		this.entityAffinity = new LinkedHashMap<>();
@@ -32,6 +34,11 @@ public class SvmTermData extends ProcessData {
 		}
 		
 		sortMapByValues();
+		
+		if(doClassification) {
+			applySoftMaxToAffinityScores();
+		}
+		
 		this.coordinatesOfW = cooredinatesOfW;
 	}
 	
@@ -45,11 +52,26 @@ public class SvmTermData extends ProcessData {
             }
         });
 
-        Map<String, Double> sortedMap = new LinkedHashMap<String, Double>();
+        Map<String, Double> sortedMap = new LinkedHashMap<String, Double>();     
         for (Map.Entry<String, Double> entry : list) {
-            sortedMap.put(entry.getKey(), entry.getValue());
+            sortedMap.put(entry.getKey(), StringUtils.formatDecimalValue(entry.getValue()));
         }
-
+        
+        this.entityAffinity = (LinkedHashMap<String, Double>) sortedMap;
+	}
+	
+	
+	private void applySoftMaxToAffinityScores() {
+        double scoreSum = 0;
+        for (Map.Entry<String, Double> entry : this.entityAffinity.entrySet()) {
+        	 scoreSum += entry.getValue();
+        }
+        
+        Map<String, Double> sortedMap = new LinkedHashMap<String, Double>();  
+        for (Map.Entry<String, Double> entry : this.entityAffinity.entrySet()) {
+        	sortedMap.put(entry.getKey(), StringUtils.formatDecimalValue(entry.getValue() * 100 / scoreSum));
+        }
+        
         this.entityAffinity = (LinkedHashMap<String, Double>) sortedMap;
 	}
 	

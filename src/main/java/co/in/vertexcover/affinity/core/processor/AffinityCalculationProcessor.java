@@ -25,7 +25,7 @@ public class AffinityCalculationProcessor {
 	private double[] decisionValues;
 	private String lableDenoter;
 	private int numberOfCoordinates;
-	
+	private boolean doClassification;
 	
 
 	private double[][] mdsMatrix;
@@ -36,7 +36,7 @@ public class AffinityCalculationProcessor {
 	
 	public AffinityCalculationProcessor() {}
 	
-	public AffinityCalculationProcessor(final int scaleLength, final String term, final MdsData mdsData) {
+	public AffinityCalculationProcessor(final int scaleLength, final String term, final MdsData mdsData, final boolean doClassification) {
 		this.scaleLength = scaleLength;
 		this.term = term;
 		this.numberOfEntity = mdsData.getEntityList().size();
@@ -53,6 +53,7 @@ public class AffinityCalculationProcessor {
 		this.entityList = mdsData.getEntityList();
 		this.termList = mdsData.getTermList();
 		this.entityData = mdsData.getEntityData();
+		this.doClassification = doClassification;
 	}
 	
 	public SvmTermData process() {
@@ -83,7 +84,7 @@ public class AffinityCalculationProcessor {
 		processDecisionValues();
 		final double kappaScore = calculateKappaScore(labels, predictedLabels);
 		final double[] coordinates = getCoordinatesOfW(model);
-		return new SvmTermData(this.term, this.decisionValues, this.entityList, kappaScore, coordinates);
+		return new SvmTermData(this.term, this.decisionValues, this.entityList, kappaScore, coordinates, doClassification);
 	}
 	
 	

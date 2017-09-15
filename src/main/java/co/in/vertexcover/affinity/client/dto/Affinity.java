@@ -17,6 +17,7 @@ public class Affinity {
 	public Affinity(final String id, final Configurations configurations) {
 		this.ID = id;
 		this.configurations = configurations;
+		this.configurations.setROOT_PATH(StringUtils.getDefaultPath(this.ID));
 		this.processes = new LinkedHashMap<>();
 	}
 	
