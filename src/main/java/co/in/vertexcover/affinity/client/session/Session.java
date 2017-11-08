@@ -42,5 +42,8 @@ public class Session {
 		this.createdOn = createdOn;
 	}
 	
+	public Affinity getAffinity() {
+		return this.affinity;
+	}
 	
 }
