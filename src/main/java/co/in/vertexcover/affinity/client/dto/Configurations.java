@@ -15,7 +15,7 @@ public class Configurations {
 	private int MDS_DIMENSIONS;
 	private double MIN_TERM_OCCURENCE_PERCENTAGE = MIN_TERM_OCCURENCE_PERCENTAGE_DEFAULT;
 	private String ROOT_PATH;
-	private int SCALE_LENGTH = 10;
+	private Integer SCALE_LENGTH = 10;
 	private int TERM_BOND_SCALE_LENGTH = 100;
 	private boolean doClassification = false;
 	

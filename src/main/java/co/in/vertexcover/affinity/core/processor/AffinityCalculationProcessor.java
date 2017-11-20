@@ -14,7 +14,7 @@ import libsvm.svm_problem;
 
 public class AffinityCalculationProcessor {
 
-	private int scaleLength;
+	private Integer scaleLength;
 	private String term;
 	private int numberOfEntity;
 	private int featureVectorRowSize;
@@ -36,7 +36,7 @@ public class AffinityCalculationProcessor {
 	
 	public AffinityCalculationProcessor() {}
 	
-	public AffinityCalculationProcessor(final int scaleLength, final String term, final MdsData mdsData, final boolean doClassification) {
+	public AffinityCalculationProcessor(final Integer scaleLength, final String term, final MdsData mdsData, final boolean doClassification) {
 		this.scaleLength = scaleLength;
 		this.term = term;
 		this.numberOfEntity = mdsData.getEntityList().size();
@@ -82,6 +82,7 @@ public class AffinityCalculationProcessor {
 		svm_model model = performTraining(zeroCounter);
 		performPrediction(model);
 		processDecisionValues();
+
 		final double kappaScore = calculateKappaScore(labels, predictedLabels);
 		final double[] coordinates = getCoordinatesOfW(model);
 		return new SvmTermData(this.term, this.decisionValues, this.entityList, kappaScore, coordinates, doClassification);
@@ -102,15 +103,26 @@ public class AffinityCalculationProcessor {
 				MAX = this.decisionValues[i];
 		}
 		
-		for(int i = 0; i < this.decisionValues.length; i++)
-			this.decisionValues[i] -= MIN;
+		if(scaleLength != null) {
+			for(int i = 0; i < this.decisionValues.length; i++)
+				this.decisionValues[i] -= MIN;
+			
+			MAX -= MIN;
+			MIN = 0;
+			
+			final double multiplier = scaleLength / MAX;
+			for(int i = 0; i < this.decisionValues.length; i++) {
+				this.decisionValues[i] *= multiplier;
+			}
+		} else {
+			
+			for(int i = 0; i < this.decisionValues.length; i++) {
+				if(this.decisionValues[i] < 0) {
+					this.decisionValues[i] = 0;
+				}
+			}
+		}
 		
-		MAX -= MIN;
-		MIN = 0;
-		
-		final double multiplier = scaleLength / MAX;
-		for(int i = 0; i < this.decisionValues.length; i++)
-			this.decisionValues[i] *= multiplier;
 	}
 	
 	
