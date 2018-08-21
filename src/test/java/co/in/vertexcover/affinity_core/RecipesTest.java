@@ -5,7 +5,7 @@ import co.in.vertexcover.affinity.client.session.Session;
 public class RecipesTest {
 
 	public static void main(String[] args) throws Exception {
-    	String inputFileLocation = "/Users/yogesh/Tensorflow/affinity-core/affinity-session-data/MyFirstSession-12345/input.txt";
+    	String inputFileLocation = "input.txt";
     	String sessionName = "Recipes";
     	String sessionId = "12345";
     	

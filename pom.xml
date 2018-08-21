@@ -42,15 +42,11 @@
 		<groupId>libsvm</groupId>
 		<artifactId>libsvm</artifactId>
 		<version>1.0.0</version>
-		<scope>system</scope>
-    	<systemPath>${basedir}/libs/libsvm.jar</systemPath>
 	</dependency>
 		<dependency>
 		<groupId>mdsj</groupId>
 		<artifactId>mdsj</artifactId>
 		<version>1.0.0</version>
-		<scope>system</scope>
-    	<systemPath>${basedir}/libs/mdsj.jar</systemPath>
 	</dependency>
 	
   </dependencies>

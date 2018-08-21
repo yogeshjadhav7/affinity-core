@@ -1,0 +1,710 @@
+{
+  "entityData" : {
+    "Zero" : {
+      "entityName" : "Zero",
+      "sumOfTermWeights" : 21,
+      "termStrength" : 21,
+      "termWeight" : {
+        "A" : 1,
+        "AB" : 1,
+        "BC" : 1,
+        "CD" : 1,
+        "DE" : 1,
+        "EF" : 1,
+        "B" : 1,
+        "AC" : 1,
+        "BD" : 1,
+        "CE" : 1,
+        "DF" : 1,
+        "C" : 1,
+        "AD" : 1,
+        "BE" : 1,
+        "CF" : 1,
+        "D" : 1,
+        "AE" : 1,
+        "BF" : 1,
+        "E" : 1,
+        "AF" : 1,
+        "F" : 1
+      }
+    },
+    "Eight" : {
+      "entityName" : "Eight",
+      "sumOfTermWeights" : 28,
+      "termStrength" : 28,
+      "termWeight" : {
+        "A" : 1,
+        "BC" : 1,
+        "DE" : 1,
+        "FG" : 1,
+        "B" : 1,
+        "BD" : 1,
+        "DF" : 1,
+        "C" : 1,
+        "BE" : 1,
+        "DG" : 1,
+        "D" : 1,
+        "BF" : 1,
+        "E" : 1,
+        "BG" : 1,
+        "F" : 1,
+        "G" : 1,
+        "AB" : 1,
+        "CD" : 1,
+        "EF" : 1,
+        "AC" : 1,
+        "CE" : 1,
+        "EG" : 1,
+        "AD" : 1,
+        "CF" : 1,
+        "AE" : 1,
+        "CG" : 1,
+        "AF" : 1,
+        "AG" : 1
+      }
+    },
+    "Five" : {
+      "entityName" : "Five",
+      "sumOfTermWeights" : 15,
+      "termStrength" : 15,
+      "termWeight" : {
+        "A" : 1,
+        "CD" : 1,
+        "FG" : 1,
+        "AC" : 1,
+        "DF" : 1,
+        "C" : 1,
+        "AD" : 1,
+        "CF" : 1,
+        "DG" : 1,
+        "D" : 1,
+        "CG" : 1,
+        "AF" : 1,
+        "F" : 1,
+        "AG" : 1,
+        "G" : 1
+      }
+    },
+    "Six" : {
+      "entityName" : "Six",
+      "sumOfTermWeights" : 21,
+      "termStrength" : 21,
+      "termWeight" : {
+        "A" : 1,
+        "CD" : 1,
+        "DE" : 1,
+        "EF" : 1,
+        "FG" : 1,
+        "AC" : 1,
+        "CE" : 1,
+        "DF" : 1,
+        "EG" : 1,
+        "C" : 1,
+        "AD" : 1,
+        "CF" : 1,
+        "DG" : 1,
+        "D" : 1,
+        "AE" : 1,
+        "CG" : 1,
+        "E" : 1,
+        "AF" : 1,
+        "F" : 1,
+        "AG" : 1,
+        "G" : 1
+      }
+    },
+    "One" : {
+      "entityName" : "One",
+      "sumOfTermWeights" : 3,
+      "termStrength" : 3,
+      "termWeight" : {
+        "BC" : 1,
+        "B" : 1,
+        "C" : 1
+      }
+    },
+    "Four" : {
+      "entityName" : "Four",
+      "sumOfTermWeights" : 10,
+      "termStrength" : 10,
+      "termWeight" : {
+        "BC" : 1,
+        "FG" : 1,
+        "B" : 1,
+        "C" : 1,
+        "CF" : 1,
+        "BF" : 1,
+        "CG" : 1,
+        "BG" : 1,
+        "F" : 1,
+        "G" : 1
+      }
+    },
+    "Nine" : {
+      "entityName" : "Nine",
+      "sumOfTermWeights" : 21,
+      "termStrength" : 21,
+      "termWeight" : {
+        "A" : 1,
+        "AB" : 1,
+        "BC" : 1,
+        "CD" : 1,
+        "FG" : 1,
+        "B" : 1,
+        "AC" : 1,
+        "BD" : 1,
+        "DF" : 1,
+        "C" : 1,
+        "AD" : 1,
+        "CF" : 1,
+        "DG" : 1,
+        "D" : 1,
+        "BF" : 1,
+        "CG" : 1,
+        "AF" : 1,
+        "BG" : 1,
+        "F" : 1,
+        "AG" : 1,
+        "G" : 1
+      }
+    },
+    "Seven" : {
+      "entityName" : "Seven",
+      "sumOfTermWeights" : 6,
+      "termStrength" : 6,
+      "termWeight" : {
+        "A" : 1,
+        "AB" : 1,
+        "BC" : 1,
+        "B" : 1,
+        "AC" : 1,
+        "C" : 1
+      }
+    },
+    "Two" : {
+      "entityName" : "Two",
+      "sumOfTermWeights" : 15,
+      "termStrength" : 15,
+      "termWeight" : {
+        "A" : 1,
+        "AB" : 1,
+        "DE" : 1,
+        "B" : 1,
+        "BD" : 1,
+        "EG" : 1,
+        "AD" : 1,
+        "BE" : 1,
+        "DG" : 1,
+        "D" : 1,
+        "AE" : 1,
+        "E" : 1,
+        "BG" : 1,
+        "AG" : 1,
+        "G" : 1
+      }
+    },
+    "Three" : {
+      "entityName" : "Three",
+      "sumOfTermWeights" : 15,
+      "termStrength" : 15,
+      "termWeight" : {
+        "A" : 1,
+        "AB" : 1,
+        "BC" : 1,
+        "CD" : 1,
+        "B" : 1,
+        "AC" : 1,
+        "BD" : 1,
+        "C" : 1,
+        "AD" : 1,
+        "DG" : 1,
+        "D" : 1,
+        "CG" : 1,
+        "BG" : 1,
+        "AG" : 1,
+        "G" : 1
+      }
+    }
+  },
+  "termData" : {
+    "A" : {
+      "termName" : "A",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : true,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 8,
+      "sumOfTermWeights" : 8
+    },
+    "BC" : {
+      "termName" : "BC",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : false,
+        "One" : true,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : true,
+        "Two" : false,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 7,
+      "sumOfTermWeights" : 7
+    },
+    "DE" : {
+      "termName" : "DE",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : false,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 4,
+      "sumOfTermWeights" : 4
+    },
+    "FG" : {
+      "termName" : "FG",
+      "entityExistence" : {
+        "Zero" : false,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 5,
+      "sumOfTermWeights" : 5
+    },
+    "B" : {
+      "termName" : "B",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : false,
+        "One" : true,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : true,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 8,
+      "sumOfTermWeights" : 8
+    },
+    "BD" : {
+      "termName" : "BD",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : false,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 5,
+      "sumOfTermWeights" : 5
+    },
+    "DF" : {
+      "termName" : "DF",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 5,
+      "sumOfTermWeights" : 5
+    },
+    "C" : {
+      "termName" : "C",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : true,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : true,
+        "Two" : false,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 9,
+      "sumOfTermWeights" : 9
+    },
+    "BE" : {
+      "termName" : "BE",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : false,
+        "One" : false,
+        "Four" : false,
+        "Nine" : false,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 3,
+      "sumOfTermWeights" : 3
+    },
+    "DG" : {
+      "termName" : "DG",
+      "entityExistence" : {
+        "Zero" : false,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 6,
+      "sumOfTermWeights" : 6
+    },
+    "D" : {
+      "termName" : "D",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 7,
+      "sumOfTermWeights" : 7
+    },
+    "BF" : {
+      "termName" : "BF",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : false,
+        "One" : false,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 4,
+      "sumOfTermWeights" : 4
+    },
+    "E" : {
+      "termName" : "E",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : false,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 4,
+      "sumOfTermWeights" : 4
+    },
+    "BG" : {
+      "termName" : "BG",
+      "entityExistence" : {
+        "Zero" : false,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : false,
+        "One" : false,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 5,
+      "sumOfTermWeights" : 5
+    },
+    "F" : {
+      "termName" : "F",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 6,
+      "sumOfTermWeights" : 6
+    },
+    "G" : {
+      "termName" : "G",
+      "entityExistence" : {
+        "Zero" : false,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 7,
+      "sumOfTermWeights" : 7
+    },
+    "AB" : {
+      "termName" : "AB",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : false,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : true,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 6,
+      "sumOfTermWeights" : 6
+    },
+    "CD" : {
+      "termName" : "CD",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 6,
+      "sumOfTermWeights" : 6
+    },
+    "EF" : {
+      "termName" : "EF",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : false,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 3,
+      "sumOfTermWeights" : 3
+    },
+    "AC" : {
+      "termName" : "AC",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : true,
+        "Two" : false,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 7,
+      "sumOfTermWeights" : 7
+    },
+    "CE" : {
+      "termName" : "CE",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : false,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 3,
+      "sumOfTermWeights" : 3
+    },
+    "EG" : {
+      "termName" : "EG",
+      "entityExistence" : {
+        "Zero" : false,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : false,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 3,
+      "sumOfTermWeights" : 3
+    },
+    "AD" : {
+      "termName" : "AD",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 7,
+      "sumOfTermWeights" : 7
+    },
+    "CF" : {
+      "termName" : "CF",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 6,
+      "sumOfTermWeights" : 6
+    },
+    "AE" : {
+      "termName" : "AE",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : false,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : false,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 4,
+      "sumOfTermWeights" : 4
+    },
+    "CG" : {
+      "termName" : "CG",
+      "entityExistence" : {
+        "Zero" : false,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : true,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 6,
+      "sumOfTermWeights" : 6
+    },
+    "AF" : {
+      "termName" : "AF",
+      "entityExistence" : {
+        "Zero" : true,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : false,
+        "Three" : false
+      },
+      "entityExistenceStrength" : 5,
+      "sumOfTermWeights" : 5
+    },
+    "AG" : {
+      "termName" : "AG",
+      "entityExistence" : {
+        "Zero" : false,
+        "Eight" : true,
+        "Five" : true,
+        "Six" : true,
+        "One" : false,
+        "Four" : false,
+        "Nine" : true,
+        "Seven" : false,
+        "Two" : true,
+        "Three" : true
+      },
+      "entityExistenceStrength" : 6,
+      "sumOfTermWeights" : 6
+    }
+  },
+  "entityList" : [ "Eight", "Five", "Four", "Nine", "One", "Seven", "Six", "Three", "Two", "Zero" ],
+  "termList" : [ "A", "AB", "AC", "AD", "AE", "AF", "AG", "B", "BC", "BD", "BE", "BF", "BG", "C", "CD", "CE", "CF", "CG", "D", "DE", "DF", "DG", "E", "EF", "EG", "F", "FG", "G" ],
+  "termDistributionRatio" : 0.5535714285714286
+}

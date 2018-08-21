@@ -12,23 +12,25 @@ public class Session {
 	private long createdOn;
 	private String sessionName;
 	private String sessionId;
+	private String affinityId;
 	private Affinity affinity;
 	
 	public Session(final String sessionName, final String sessionId) {
 		this.createdOn = new Date().getTime();
 		this.sessionName = sessionName;
 		this.sessionId = sessionId;
+		this.affinityId = StringUtils.createAffinityId(this.sessionName, this.sessionId);
 	}
 	
 	
 	public void startProcess(final String inputFilePath) throws Exception {
-		this.affinity = new Affinity(StringUtils.createAffinityId(this.sessionName, this.sessionId));
+		this.affinity = new Affinity(this.affinityId);
 		AffinityStarter.start(inputFilePath, affinity);
 		
 	}
 	
 	public void startProcess(final String inputFilePath, final Configurations configurations) throws Exception {
-		this.affinity = new Affinity(StringUtils.createAffinityId(this.sessionName, this.sessionId), configurations);
+		this.affinity = new Affinity(this.affinityId, configurations);
 		AffinityStarter.start(inputFilePath, affinity);
 	}
 
@@ -45,5 +47,17 @@ public class Session {
 	public Affinity getAffinity() {
 		return this.affinity;
 	}
+
+
+	public String getAffinityId() {
+		return affinityId;
+	}
+
+
+	public void setAffinityId(String affinityId) {
+		this.affinityId = affinityId;
+	}
+	
+	
 	
 }

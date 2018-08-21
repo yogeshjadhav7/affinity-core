@@ -117,11 +117,11 @@ public class Configurations {
 		ROOT_PATH = rOOT_PATH;
 	}
 
-	public int getSCALE_LENGTH() {
+	public Integer getSCALE_LENGTH() {
 		return SCALE_LENGTH;
 	}
 
-	public void setSCALE_LENGTH(int sCALE_LENGTH) {
+	public void setSCALE_LENGTH(Integer sCALE_LENGTH) {
 		SCALE_LENGTH = sCALE_LENGTH;
 	}
 
