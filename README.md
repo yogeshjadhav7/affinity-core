@@ -21,13 +21,13 @@ There is only one data (input) file that is required by the process, along with 
 
 ### Data Flow
 ---
-1. The input file is parsed and and the data fetched is validated.
+1. The input file is parsed and the data fetched is validated.
 2. The data flows in processing module from validation module. Here, following steps are performed to process the raw data.
     - Building of **PPMI matrix** from the sparse data.
     - Building of **Angular-Difference** matrix from the PPMI matrix.
-    - Building the **Distance Matrix** from Angular-Difference matrix converting data matrix to dense matrix.
+    - Building the **Distance Matrix** from Angular-Difference matrix converting sparse data matrix to dense matrix.
     - Finally, building of **MDS Matrix** from the dense Distance Matrix.
-3. MDS matrix is used to perform Affinity Calculation which relate each entity-term pair with an affinity score.
+3. MDS matrix is used to perform Affinity calculation which relate each entity-term pair with an affinity score.
 4. The decision boundary of linear SVM computed for each term to separate entities is used in calculation of bonding scores between the terms. More on the output files below.
 
 
