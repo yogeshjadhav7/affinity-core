@@ -8,18 +8,18 @@ public class Led7Test {
 
 	public static void main(String[] args) throws Exception {
 		
-	String sessionId = "777";
-	String sessionName = "Led7";
+	String sessionId = "7";
+	String sessionName = "Led";
     
+    	
     	Configurations configurations = new Configurations();
     	configurations.setMDS_DIMENSIONS(20);
     	configurations.setDoClassification(true);
-    	configurations.setSCALE_LENGTH(10);
+    	configurations.setSCALE_LENGTH(100);
     	
     	Session session = new Session(sessionName, sessionId);
     	
     final String inputFileLocation = "input.txt";
-    	
     	session.startProcess(inputFileLocation, configurations);
 
 	}

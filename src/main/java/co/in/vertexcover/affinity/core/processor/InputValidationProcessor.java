@@ -13,6 +13,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
+
+import co.in.vertexcover.affinity.client.dto.Affinity;
+import co.in.vertexcover.affinity.client.dto.Configurations;
 import co.in.vertexcover.affinity.core.constants.InputProcessorConstants;
 import co.in.vertexcover.affinity.core.dto.InputData;
 import co.in.vertexcover.affinity.core.dto.InputValidationData;
@@ -34,7 +38,8 @@ public class InputValidationProcessor {
 		this.termSet = new HashSet<>();
 	}
 
-	public InputValidationData validate(final File inputFile, final double termMinimumOccurrencePercentage) {
+	public InputValidationData validate(final File inputFile, final Configurations configurations) {
+		final double termMinimumOccurrencePercentage = configurations.getMIN_TERM_OCCURENCE_PERCENTAGE();
 		int lineNumber = 1;
 		try(BufferedReader br = new BufferedReader(new FileReader(inputFile))) {
 		    for(String inputLine; (inputLine = br.readLine()) != null; ) {
@@ -68,6 +73,10 @@ public class InputValidationProcessor {
 		List<String> termList = new ArrayList<>(termData.keySet());
 		Collections.sort(entityList);
 		Collections.sort(termList);
+		
+		// Save File
+		saveInputFile(configurations, inputFile);
+		
 		this.response.setInputData(new InputData(entityData, termData, entityList, termList));
 		return response;
 	}
@@ -159,6 +168,17 @@ public class InputValidationProcessor {
 			return (Integer.parseInt(weight) > 0)?true:false;
 		} catch(Exception e) {
 			return false;
+		}
+	}
+	
+	private void saveInputFile(final Configurations configurations, final File file) {
+		final String destinationFilePath = configurations.getROOT_PATH() + "inputFile.txt";
+		File destinationFile = new File(destinationFilePath);
+		try {
+			FileUtils.copyFile(file, destinationFile);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 }

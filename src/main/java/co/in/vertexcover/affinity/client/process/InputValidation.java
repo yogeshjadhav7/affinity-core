@@ -44,7 +44,7 @@ public class InputValidation extends Process {
 	
 	@Override
 	public void mainProcess(final Affinity affinity) throws Exception {
-    	InputValidationData inputValidationData = new InputValidationProcessor().validate(inputFile, affinity.getConfigurations().getMIN_TERM_OCCURENCE_PERCENTAGE());
+    	InputValidationData inputValidationData = new InputValidationProcessor().validate(inputFile, affinity.getConfigurations());
     	if(!inputValidationData.isValid()) {
     		this.processException = new Exception(inputValidationData.getErrorMessage());
     		throw this.processException;
