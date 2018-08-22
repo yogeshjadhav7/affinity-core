@@ -18,8 +18,7 @@ public class Led7Test {
     	
     	Session session = new Session(sessionName, sessionId);
     	
-    final String inputFileName = "input.txt";
-    	String inputFileLocation = StringUtils.getDefaultPath(session.getAffinityId()) + inputFileName;
+    final String inputFileLocation = "input.txt";
     	
     	session.startProcess(inputFileLocation, configurations);
 
