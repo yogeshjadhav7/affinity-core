@@ -130,6 +130,7 @@ public class AffinityCalculationProcessor {
 		populateLabels();
 		svm_problem probs = getSvmProblem();
 		svm_parameter params = getSvmParam(zeroCounter);
+		System.out.println("NOTE: The verbose here is created by the libsvm.jar (wrapper to libsvm C++) while training and there is no way to turn this off in Java. I would recommend to use this as the background service to bypass this garbage verbose. A proper logging system is work in progress :)");
 		return svm.svm_train(probs, params);
 	}
 	
