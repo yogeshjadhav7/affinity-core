@@ -23,8 +23,8 @@ There is only one data (input) file that is required by the process, along with 
 ---
 1. The input file is parsed and the data fetched is validated.
 2. The data flows in processing module from validation module. Here, following steps are performed to process the raw data.
-    - Building of **PPMI matrix** from the sparse data.
-    - Building of **Angular-Difference** matrix from the PPMI matrix.
+    - Building the **PPMI matrix** from the sparse data.
+    - Building the **Angular-Difference** matrix from the PPMI matrix.
     - Building the **Distance Matrix** from Angular-Difference matrix converting sparse data matrix to dense matrix.
     - Finally, building of **MDS Matrix** from the dense Distance Matrix.
 3. MDS matrix is used to perform Affinity calculation which relate each entity-term pair with an affinity score.
@@ -88,9 +88,9 @@ There are two types of arguments to be passed to Affinity-Core Command Line API.
 3. **inputFile** : The location of the input file which follows the above mentioned structure.
 
 > **Optional Arguments (Affinity-Core Configuration)**
-1. **configScaleLength** : Scale length is an integer value used for acaling affinity scores computed in AFFINITY_CALCULATION.txt output file.
+1. **configScaleLength** : Scale length is an integer value used for scaling affinity scores computed in AFFINITY_CALCULATION.txt output file.
 2. **configClassificationJob** : A boolean flag in the configuration which specifies the type of the job. If equals to true, affinity scores in AFFINITY_CALCULATION.txt will be provided after performing softmax (computing probabilities for terms) for each entity.
-3. **configMdsDimensions** : An integer value specifies the number of dimensions of the multidimensions space, wherein process computes decision boundary for a linear kernel SVM for each term to divide entities. This value can also be described as number of features (dimensionality) considered by the process for each entities. There is a tradeoff between high accuracy (high MDS dimensions) and low computation speed (low MDS dimensions).
+3. **configMdsDimensions** : An integer value specifies the number of dimensions of the multidimension space, wherein process computes decision boundary for a linear kernel SVM for each term to divide entities. This value can also be described as number of features (dimensionality) considered by the process for each entities. There is a tradeoff between high accuracy (high MDS dimensions) and low computation speed (low MDS dimensions).
 
 ### Command Line Usage
 > At the root directory, run the java command to execute **target/affinity-core-jar-with-dependencies.jar** by providing mandatory and optional arguments. We would be using nohup to run the process in background.
